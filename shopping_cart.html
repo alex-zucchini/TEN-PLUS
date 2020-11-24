@@ -9,8 +9,8 @@
         crossorigin="anonymous" />
     <link rel='stylesheet' href='css/style.css'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>ТЭН ПЛЮС</title>
 </head>
 
@@ -36,66 +36,379 @@
                         <button type='button' class="header__authorization">Войти</button>
                     </div>
 
-                  
+
 
                 </div>
 
                 <div class="header__row-bottom">
                     <div class="header__logo-slogan-catalog-wrapper">
-                    <div class="header__logo-slogan-wrapper">
-                        <a class="header__logo-link" href='#'>
-                        <img src="img/header-logo-main.svg" alt="ТЭН ПЛЮС" class="header__logo-img">
-                        </a>
-                        <p class="header__slogan">Тэны оптом с доставкой по России и странам СНГ</p>
+                        <div class="header__logo-slogan-wrapper">
+                            <a class="header__logo-link" href='#'>
+                                <img src="img/header-logo-main.svg" alt="ТЭН ПЛЮС" class="header__logo-img">
+                            </a>
+                            <p class="header__slogan">Тэны оптом с доставкой по России и странам СНГ</p>
+                        </div>
+
+                        <button type='button' class="header__catalog">
+                            <img src="img/header-catalog.svg" alt="Каталог" class="header__catalog-icon">
+                            Каталог
+                        </button>
                     </div>
-                    
-                    <button type='button' class="header__catalog">
-                        <img src="img/header-catalog.svg" alt="Каталог" class="header__catalog-icon">
-                        Каталог
-                    </button>
-                </div>
                     <div class="header__search">
                         <img src='img/header-search.svg' alt="Поиск" class="header__search-icon">
                         Поиск по каталогу
                     </div>
                     <div class="header__phone-cart-wrapper">
-                    <a class="header__phone-link" href="tel:+78002340997">
-                        <img src='img/header-phone.svg' alt="Телефон" class="header__phone-icon">
-                        <p class='header__phone-number'>8 (800) 234-09-97</p>
-                    </a>
-                    <a class="header__cart-link" href='#'>
-                        <img src="img/header-cart.svg" alt="" class="header__cart-icon">
-                        <div class="header__order">
-                            <div class="header__order-quantity">2</div>
-                        </div>
-                    </a>
-                </div>
+                        <a class="header__phone-link" href="tel:+78002340997">
+                            <img src='img/header-phone.svg' alt="Телефон" class="header__phone-icon">
+                            <p class='header__phone-number'>8 (800) 234-09-97</p>
+                        </a>
+                        <a class="header__cart-link" href='#'>
+                            <img src="img/header-cart.svg" alt="" class="header__cart-icon">
+                            <div class="header__order">
+                                <div class="header__order-quantity">2</div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
 
             </nav>
         </div>
     </header>
-    
+
     <main class="cart">
         <div class="container">
-            <div class="cart-wrapper">
+            <div class="page-top-elements">
+                <!-- <div class="breadcrumbs">
+                    <a href="/" class="breadcrumbs__item">Главная</a>
+                </div> -->
+                <div class="page-top-elements__items-wrapper">
+                    <h1 class="page-heading">Ваш заказ</h1>
+                </div>
+            </div>
+
+            <div class="cart__wrapper">
 
                 <!-- Order List -->
                 <div class="order-list">
                     <div class="order-list__item">
-                        <div class="order-list__img-wrapper">
-                            <img src="" alt="" class="order-list__img">
+
+                        <a href="/" class="order-list__img-name-wrapper">
+                            <div class="order-list__img-wrapper">
+                                <img src="img/products/sample-ten1.png" alt="" class="order-list__img">
+                            </div>
+    
+                            <div class="order-list__name-id-wrapper">
+                                <h3 class="order-list__name">Нагрев. элемент 1000 Вт. M6 для водонгр. Ariston VELIS
+                                    (65151226)</h3>
+                                <p class="order-list__id-wrapper">Артикул: <span class="order-list__id">С040</span></p>
+                            </div>
+                        </a>
+
+                        <div class="quantity-widget">
+                            <button class="quantity-widget__minus"><img src="/img/icons/minus.svg" alt="" class="quantity-widget__minus-icon"></button>
+                            <div class="quantity-widget__number">1</div>
+                            <button class="quantity-widget__plus"><img src="/img/icons/plus.svg" alt="" class="quantity-widget__plus-icon"></button>
                         </div>
-                        <div class="order-list__product-name-wrapper">
-                            <h3 class="order-list__product-name">Нагрев. элемент 1000 Вт. M6 для водонгр. Ariston VELIS (65151226)</h3>
-                            <p class="order-list__product-vendor-code">Артикул: <span class="order-list__product-id">С040</span></p>
+
+                        <p class="order-list__total-price" title="Общая сумма"><span class="order-list__total-price-number">1000</span> ₽</p>
+
+                        <button class="order-list__delete" title="Удалить">
+                            <img src="/img/icons/close.svg" alt="" class="order-list__delete-icon">
+                        </button>
+
+                    </div>
+                    <div class="order-list__item">
+
+                        <a href="/" class="order-list__img-name-wrapper">
+                            <div class="order-list__img-wrapper">
+                                <img src="img/products/sample-ten1.png" alt="" class="order-list__img">
+                            </div>
+    
+                            <div class="order-list__name-id-wrapper">
+                                <h3 class="order-list__name">Нагрев. элемент 1000 Вт. M6 для водонгр. Ariston VELIS
+                                    (65151226)</h3>
+                                <p class="order-list__id-wrapper">Артикул: <span class="order-list__id">С040</span></p>
+                            </div>
+                        </a>
+
+                        <div class="quantity-widget">
+                            <button class="quantity-widget__minus"><img src="/img/icons/minus.svg" alt="" class="quantity-widget__minus-icon"></button>
+                            <div class="quantity-widget__number">1</div>
+                            <button class="quantity-widget__plus"><img src="/img/icons/plus.svg" alt="" class="quantity-widget__plus-icon"></button>
                         </div>
+
+                        <p class="order-list__total-price" title="Общая сумма"><span class="order-list__total-price-number">1000</span> ₽</p>
+
+                        <button class="order-list__delete" title="Удалить">
+                            <img src="/img/icons/close.svg" alt="" class="order-list__delete-icon">
+                        </button>
+
+                    </div>
+                    <div class="order-list__item">
+
+                        <a href="/" class="order-list__img-name-wrapper">
+                            <div class="order-list__img-wrapper">
+                                <img src="img/products/sample-ten1.png" alt="" class="order-list__img">
+                            </div>
+    
+                            <div class="order-list__name-id-wrapper">
+                                <h3 class="order-list__name">Нагрев. элемент 1000 Вт. M6 для водонгр. Ariston VELIS
+                                    (65151226)</h3>
+                                <p class="order-list__id-wrapper">Артикул: <span class="order-list__id">С040</span></p>
+                            </div>
+                        </a>
+
+                        <div class="quantity-widget">
+                            <button class="quantity-widget__minus"><img src="/img/icons/minus.svg" alt="" class="quantity-widget__minus-icon"></button>
+                            <div class="quantity-widget__number">1</div>
+                            <button class="quantity-widget__plus"><img src="/img/icons/plus.svg" alt="" class="quantity-widget__plus-icon"></button>
+                        </div>
+
+                        <p class="order-list__total-price" title="Общая сумма"><span class="order-list__total-price-number">1000</span> ₽</p>
+
+                        <button class="order-list__delete" title="Удалить">
+                            <img src="/img/icons/close.svg" alt="" class="order-list__delete-icon">
+                        </button>
+
+                    </div>
+                    <div class="order-list__item">
+
+                        <a href="/" class="order-list__img-name-wrapper">
+                            <div class="order-list__img-wrapper">
+                                <img src="img/products/sample-ten1.png" alt="" class="order-list__img">
+                            </div>
+    
+                            <div class="order-list__name-id-wrapper">
+                                <h3 class="order-list__name">Нагрев. элемент 1000 Вт. M6 для водонгр. Ariston VELIS
+                                    (65151226)</h3>
+                                <p class="order-list__id-wrapper">Артикул: <span class="order-list__id">С040</span></p>
+                            </div>
+                        </a>
+
+                        <div class="quantity-widget">
+                            <button class="quantity-widget__minus"><img src="/img/icons/minus.svg" alt="" class="quantity-widget__minus-icon"></button>
+                            <div class="quantity-widget__number">1</div>
+                            <button class="quantity-widget__plus"><img src="/img/icons/plus.svg" alt="" class="quantity-widget__plus-icon"></button>
+                        </div>
+
+                        <p class="order-list__total-price" title="Общая сумма"><span class="order-list__total-price-number">1000</span> ₽</p>
+
+                        <button class="order-list__delete" title="Удалить">
+                            <img src="/img/icons/close.svg" alt="" class="order-list__delete-icon">
+                        </button>
+
+                    </div>
+                    <div class="order-list__item">
+
+                        <a href="/" class="order-list__img-name-wrapper">
+                            <div class="order-list__img-wrapper">
+                                <img src="img/products/sample-ten1.png" alt="" class="order-list__img">
+                            </div>
+    
+                            <div class="order-list__name-id-wrapper">
+                                <h3 class="order-list__name">Нагрев. элемент 1000 Вт. M6 для водонгр. Ariston VELIS
+                                    (65151226)</h3>
+                                <p class="order-list__id-wrapper">Артикул: <span class="order-list__id">С040</span></p>
+                            </div>
+                        </a>
+
+                        <div class="quantity-widget">
+                            <button class="quantity-widget__minus"><img src="/img/icons/minus.svg" alt="" class="quantity-widget__minus-icon"></button>
+                            <div class="quantity-widget__number">1</div>
+                            <button class="quantity-widget__plus"><img src="/img/icons/plus.svg" alt="" class="quantity-widget__plus-icon"></button>
+                        </div>
+
+                        <p class="order-list__total-price" title="Общая сумма"><span class="order-list__total-price-number">1000</span> ₽</p>
+
+                        <button class="order-list__delete" title="Удалить">
+                            <img src="/img/icons/close.svg" alt="" class="order-list__delete-icon">
+                        </button>
+
+                    </div>
+                    <div class="order-list__item">
+
+                        <a href="/" class="order-list__img-name-wrapper">
+                            <div class="order-list__img-wrapper">
+                                <img src="img/products/sample-ten1.png" alt="" class="order-list__img">
+                            </div>
+    
+                            <div class="order-list__name-id-wrapper">
+                                <h3 class="order-list__name">Нагрев. элемент 1000 Вт. M6 для водонгр. Ariston VELIS
+                                    (65151226)</h3>
+                                <p class="order-list__id-wrapper">Артикул: <span class="order-list__id">С040</span></p>
+                            </div>
+                        </a>
+
+                        <div class="quantity-widget">
+                            <button class="quantity-widget__minus"><img src="/img/icons/minus.svg" alt="" class="quantity-widget__minus-icon"></button>
+                            <div class="quantity-widget__number">1</div>
+                            <button class="quantity-widget__plus"><img src="/img/icons/plus.svg" alt="" class="quantity-widget__plus-icon"></button>
+                        </div>
+
+                        <p class="order-list__total-price" title="Общая сумма"><span class="order-list__total-price-number">1000</span> ₽</p>
+
+                        <button class="order-list__delete" title="Удалить">
+                            <img src="/img/icons/close.svg" alt="" class="order-list__delete-icon">
+                        </button>
+
+                    </div>
+                    <div class="order-list__item">
+
+                        <a href="/" class="order-list__img-name-wrapper">
+                            <div class="order-list__img-wrapper">
+                                <img src="img/products/sample-ten1.png" alt="" class="order-list__img">
+                            </div>
+    
+                            <div class="order-list__name-id-wrapper">
+                                <h3 class="order-list__name">Нагрев. элемент 1000 Вт. M6 для водонгр. Ariston VELIS
+                                    (65151226)</h3>
+                                <p class="order-list__id-wrapper">Артикул: <span class="order-list__id">С040</span></p>
+                            </div>
+                        </a>
+
+                        <div class="quantity-widget">
+                            <button class="quantity-widget__minus"><img src="/img/icons/minus.svg" alt="" class="quantity-widget__minus-icon"></button>
+                            <div class="quantity-widget__number">1</div>
+                            <button class="quantity-widget__plus"><img src="/img/icons/plus.svg" alt="" class="quantity-widget__plus-icon"></button>
+                        </div>
+
+                        <p class="order-list__total-price" title="Общая сумма"><span class="order-list__total-price-number">1000</span> ₽</p>
+
+                        <button class="order-list__delete" title="Удалить">
+                            <img src="/img/icons/close.svg" alt="" class="order-list__delete-icon">
+                        </button>
+
+                    </div>
+                    <div class="order-list__item">
+
+                        <a href="/" class="order-list__img-name-wrapper">
+                            <div class="order-list__img-wrapper">
+                                <img src="img/products/sample-ten1.png" alt="" class="order-list__img">
+                            </div>
+    
+                            <div class="order-list__name-id-wrapper">
+                                <h3 class="order-list__name">Нагрев. элемент 1000 Вт. M6 для водонгр. Ariston VELIS
+                                    (65151226)</h3>
+                                <p class="order-list__id-wrapper">Артикул: <span class="order-list__id">С040</span></p>
+                            </div>
+                        </a>
+
+                        <div class="quantity-widget">
+                            <button class="quantity-widget__minus"><img src="/img/icons/minus.svg" alt="" class="quantity-widget__minus-icon"></button>
+                            <div class="quantity-widget__number">1</div>
+                            <button class="quantity-widget__plus"><img src="/img/icons/plus.svg" alt="" class="quantity-widget__plus-icon"></button>
+                        </div>
+
+                        <p class="order-list__total-price" title="Общая сумма"><span class="order-list__total-price-number">1000</span> ₽</p>
+
+                        <button class="order-list__delete" title="Удалить">
+                            <img src="/img/icons/close.svg" alt="" class="order-list__delete-icon">
+                        </button>
+
+                    </div>
+                    <div class="order-list__item">
+
+                        <a href="/" class="order-list__img-name-wrapper">
+                            <div class="order-list__img-wrapper">
+                                <img src="img/products/sample-ten1.png" alt="" class="order-list__img">
+                            </div>
+    
+                            <div class="order-list__name-id-wrapper">
+                                <h3 class="order-list__name">Нагрев. элемент 1000 Вт. M6 для водонгр. Ariston VELIS
+                                    (65151226)</h3>
+                                <p class="order-list__id-wrapper">Артикул: <span class="order-list__id">С040</span></p>
+                            </div>
+                        </a>
+
+                        <div class="quantity-widget">
+                            <button class="quantity-widget__minus"><img src="/img/icons/minus.svg" alt="" class="quantity-widget__minus-icon"></button>
+                            <div class="quantity-widget__number">1</div>
+                            <button class="quantity-widget__plus"><img src="/img/icons/plus.svg" alt="" class="quantity-widget__plus-icon"></button>
+                        </div>
+
+                        <p class="order-list__total-price" title="Общая сумма"><span class="order-list__total-price-number">1000</span> ₽</p>
+
+                        <button class="order-list__delete" title="Удалить">
+                            <img src="/img/icons/close.svg" alt="" class="order-list__delete-icon">
+                        </button>
+
+                    </div>
+                    <div class="order-list__item">
+
+                        <a href="/" class="order-list__img-name-wrapper">
+                            <div class="order-list__img-wrapper">
+                                <img src="img/products/sample-ten1.png" alt="" class="order-list__img">
+                            </div>
+    
+                            <div class="order-list__name-id-wrapper">
+                                <h3 class="order-list__name">Нагрев. элемент 1000 Вт. M6 для водонгр. Ariston VELIS
+                                    (65151226)</h3>
+                                <p class="order-list__id-wrapper">Артикул: <span class="order-list__id">С040</span></p>
+                            </div>
+                        </a>
+
+                        <div class="quantity-widget">
+                            <button class="quantity-widget__minus"><img src="/img/icons/minus.svg" alt="" class="quantity-widget__minus-icon"></button>
+                            <div class="quantity-widget__number">1</div>
+                            <button class="quantity-widget__plus"><img src="/img/icons/plus.svg" alt="" class="quantity-widget__plus-icon"></button>
+                        </div>
+
+                        <p class="order-list__total-price" title="Общая сумма"><span class="order-list__total-price-number">1000</span> ₽</p>
+
+                        <button class="order-list__delete" title="Удалить">
+                            <img src="/img/icons/close.svg" alt="" class="order-list__delete-icon">
+                        </button>
+
+                    </div>
+                    <div class="order-list__item">
+
+                        <a href="/" class="order-list__img-name-wrapper">
+                            <div class="order-list__img-wrapper">
+                                <img src="img/products/sample-ten1.png" alt="" class="order-list__img">
+                            </div>
+    
+                            <div class="order-list__name-id-wrapper">
+                                <h3 class="order-list__name">Нагрев. элемент 1000 Вт. M6 для водонгр. Ariston VELIS
+                                    (65151226)</h3>
+                                <p class="order-list__id-wrapper">Артикул: <span class="order-list__id">С040</span></p>
+                            </div>
+                        </a>
+
+                        <div class="quantity-widget">
+                            <button class="quantity-widget__minus"><img src="/img/icons/minus.svg" alt="" class="quantity-widget__minus-icon"></button>
+                            <div class="quantity-widget__number">1</div>
+                            <button class="quantity-widget__plus"><img src="/img/icons/plus.svg" alt="" class="quantity-widget__plus-icon"></button>
+                        </div>
+
+                        <p class="order-list__total-price" title="Общая сумма"><span class="order-list__total-price-number">1000</span> ₽</p>
+
+                        <button class="order-list__delete" title="Удалить">
+                            <img src="/img/icons/close.svg" alt="" class="order-list__delete-icon">
+                        </button>
+
                     </div>
                 </div>
 
                 <!-- Order Info -->
-                <div class="cart__order-info">
-			
+                <div class="order-info__wrapper">
+                    <div class="order-info">
+                        <p class="order-info__quantity-wrapper">
+                            <span class="order-info__quantity">5</span> 
+                            <span class="cart__order-quantity-noun">товаров</span>
+                             в заказе
+                        </p>
+    
+                        <div class="order-info__text">
+                           <p class="order-info__total-price">Цена: <span class="order-info__total-price-number">5000</span> ₽</p>
+                           <p class="order-info__discount">Скидка: <span class="order-info__discount-number">0</span> ₽</p>
+                        </div>
+    
+                        <p class="order-info__special-price"><span class="order-info__special-price-number">5000</span> ₽</p>
+    
+                        <button class="st-button st-button--cta">Оформить заказ</button>
+    
+                    </div>
                 </div>
             </div>
         </div>
