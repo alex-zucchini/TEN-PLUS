@@ -142,7 +142,7 @@ button:focus {
     width:22vw;
 }
 
-@media screen and (max-width:991px) {
+@media screen and (max-width:1120px) {
     .header__email-auth-wrapper {
         width:15vw;
     }
@@ -166,7 +166,7 @@ button:focus {
 
 }
 
-@media screen and (max-width:991px) {
+@media screen and (max-width:1120px) {
     .header__email-address {
         display:none;
     }
@@ -296,6 +296,7 @@ button:focus {
     width:17vw;
     height:48px;
     padding-left:25px;
+   margin-left: 30px;
 }
 
 @media screen and (max-width:1279px) {
@@ -332,7 +333,7 @@ button:focus {
     justify-content: space-between;
 }
 
-@media screen and (max-width:991px) {
+@media screen and (max-width:1120px) {
     .header__phone-cart-wrapper {
         width:15vw;
     }
@@ -370,7 +371,7 @@ button:focus {
     }
 }
 
-@media screen and (max-width:991px) {
+@media screen and (max-width:1120px) {
     .header__phone-number {
         display:none;
     }
@@ -441,7 +442,7 @@ button:focus {
     .header__hamburger-wrapper {
         display: flex;
         align-items: center;
-        margin-right:30px;
+        
     }
 }
 
@@ -450,9 +451,15 @@ button:focus {
     cursor: pointer;
     text-decoration: none;
     color: #5E5B66;
-    position: relative;
+    
     z-index: 30;
     display: none;
+}
+
+.zalupa {
+    position:relative;
+    width: 16px;
+    height: 16px;
 }
 
 @media screen and (max-width:767px) {
@@ -481,8 +488,9 @@ button:focus {
 
 
 .header__openbtn-lines {
-    top: 50%;
-    left: 150%;
+    top: -50%;
+    left: 300%;
+    
     
 }
 
