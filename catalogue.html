@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link rel='stylesheet' href='css/style.css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>ТЭН ПЛЮС</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class='header'>
+                <div class="header__row-top">
+                    <ul class='header__menu'>
+                        <li class='header__menu-item'><a class='header__menu-link' href='#'>Акции</a></li>
+                        <li class='header__menu-item'><a class='header__menu-link' href='#'>Гарантия</a></li>
+                        <li class='header__menu-item'><a class='header__menu-link' href='#'>Доставка</a></li>
+                        <li class='header__menu-item'><a class='header__menu-link' href='#'>Оплата</a></li>
+                        <li class='header__menu-item'><a class='header__menu-link' href='#'>О компании</a></li>
+                        <li class='header__menu-item'><a class='header__menu-link' href='#'>Контакты</a></li>
+                    </ul>
+
+                    <div class='header__email-auth-wrapper'>
+                        <a class='header__email-link' href='mailto:info@tenplus.ru'>
+                            <img class='header__email-icon' src='img/header-mail.svg' alt='E-mail'>
+                            <p class="header__email-address">info@tenplus.ru</p>
+                        </a>
+                        <button type='button' class="header__authorization">Войти</button>
+                    </div>
+
+                  
+
+                </div>
+
+                <div class="header__row-bottom">
+                    <div class="header__logo-slogan-catalog-wrapper">
+                    <div class="header__logo-slogan-wrapper">
+                        <a class="header__logo-link" href='#'>
+                        <img src="img/header-logo-main.svg" alt="ТЭН ПЛЮС" class="header__logo-img">
+                        </a>
+                        <p class="header__slogan">Тэны оптом с доставкой по России и странам СНГ</p>
+                    </div>
+                    
+                    <button type='button' class="header__catalog">
+                        <img src="img/header-catalog.svg" alt="Каталог" class="header__catalog-icon">
+                        Каталог
+                    </button>
+                </div>
+                    <div class="header__search">
+                        <img src='img/header-search.svg' alt="Поиск" class="header__search-icon">
+                        Поиск<span> по каталогу</span>
+                    </div>
+                    <div class="header__phone-cart-wrapper">
+                    <a class="header__phone-link" href="tel:+78002340997">
+                        <img src='img/header-phone.svg' alt="Телефон" class="header__phone-icon">
+                        <p class='header__phone-number'>8 (800) 234-09-97</p>
+                    </a>
+                    <a class="header__cart-link" href='#'>
+                        <img src="img/header-cart.svg" alt="" class="header__cart-icon">
+                        <div class="header__order">
+                            <div class="header__order-quantity">2</div>
+                        </div>
+                    </a>
+                    <div class='header__hamburger-wrapper'>
+                       
+                        <a href='#' class="header__openbtn">
+                            <p>Меню</p>
+                            <div class="zalupa">
+                            <span class="header__openbtn-lines"></span>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+<main>
+    <div class="container">
+        <div class="title-views-wrapper">
+            <h1 class="page-title">ТЭНы для водонагревателей</h1>
+            <div class="view-switch-wrapper">
+                <button class="view-switch-list" type="button"><img src="img/catalogue/view-switch__list.svg" alt="Список" class="view-switch-list-icon"></button>
+                <button class="view-switch-cards" type="button"><img src="img/catalogue/view-switch__cards.svg" alt="Карточки" class="view-switch-list-icon"></button>
+            </div>
+        </div>
+        <div class="main__wrapper">
+<div class="settings-wrapper">
+    <div class="settings__brands">
+        <h3>Бренды</h3>
+        <div class="settings__brands-checkbox"><input type="checkbox" name="ariston" id="ariston"><p>Ariston</p></div>
+        <div class="settings__brands-checkbox"><input type="checkbox" name="electrolux" id="electrolux"><p>Electrolux</p></div>
+        <div class="settings__brands-checkbox"><input type="checkbox" name="bosch" id="bosch"><p>Bosch</p></div>
+    </div>
+    <div class="settings__power">
+        <h3>Мощность, Вт</h3>
+        <input type="range" min="700" max="4000" name="power" id="power">
+        <div class="settings__power-btn-wrapper">
+            <div class="settings__power-btn">от <span>700</span></div>
+            <div class="settings__power-btn">до <span>4000</span></div>
+        </div>
+    </div>
+    <div class="settings__country">
+        <h3>Страна-производитель</h3>
+        <div class="settings__country-checkbox"><input type="checkbox" name="italy" id="italy"><p>Италия</p></div>
+        <div class="settings__country-checkbox"><input type="checkbox" name="russia" id="russia"><p>Россия</p></div>
+        <div class="settings__country-checkbox"><input type="checkbox" name="china" id="china"><p>Китай</p></div> 
+    </div>
+    <div class="settings__length">
+        <h3>Длина, мм</h3>
+        <input type="range" min="110" max="480" name="length" id="length">
+        <div class="settings__length-btn-wrapper">
+            <div class="settings__length-btn">от <span>110</span></div>
+            <div class="settings__length-btn">до <span>480</span></div>
+        </div>
+    </div>
+    <div class="settings__material">
+        <h3>Материал</h3>
+        <div class="settings__material-checkbox"><input type="checkbox" name="copper" id="copper"><p>Медь</p></div>
+        <div class="settings__material-checkbox"><input type="checkbox" name="steel" id="steel"><p>Нержавейка</p></div>
+    </div>
+</div>
+
+<div class="main__catalog">
+<div class="main__catalog-item">
+    <div class="main__catalog-item-img-wrapper">
+    <img class="main__catalog-item-img" src="img/catalogue/ariston-velis.png" alt="Ariston"></div>
+    <p class="main__catalog-item-description1">С040</p>
+    <p class="main__catalog-item-description2">Нагрев. элемент 1000 Вт. M6 для водонгр. Ariston VELIS (65151226)</p>
+    <p class="main__catalog-item-description3">от <span>1000 ₽</span></p>
+    <button class="main__catalog-item-btn" type="button">Купить</button>
+</div>
+<div class="main__catalog-item">
+    <div class="main__catalog-item-img-wrapper">
+    <img class="main__catalog-item-img" src="img/catalogue/ariston-velis.png" alt="Ariston"></div>
+    <p class="main__catalog-item-description1">С040</p>
+    <p class="main__catalog-item-description2">Нагрев. элемент 1000 Вт. M6 для водонгр. Ariston VELIS (65151226)</p>
+    <p class="main__catalog-item-description3">от <span>1000 ₽</span></p>
+    <button class="main__catalog-item-btn" type="button">Купить</button>
+</div>
+<div class="main__catalog-item">
+    <div class="main__catalog-item-img-wrapper">
+    <img class="main__catalog-item-img" src="img/catalogue/ariston-velis.png" alt="Ariston"></div>
+    <p class="main__catalog-item-description1">С040</p>
+    <p class="main__catalog-item-description2">Нагрев. элемент 1000 Вт. M6 для водонгр. Ariston VELIS (65151226)</p>
+    <p class="main__catalog-item-description3">от <span>1000 ₽</span></p>
+    <button class="main__catalog-item-btn" type="button">Купить</button>
+</div>
+<div class="main__catalog-item">
+    <div class="main__catalog-item-img-wrapper">
+    <img class="main__catalog-item-img" src="img/catalogue/ariston-velis.png" alt="Ariston"></div>
+    <p class="main__catalog-item-description1">С040</p>
+    <p class="main__catalog-item-description2">Нагрев. элемент 1000 Вт. M6 для водонгр. Ariston VELIS (65151226)</p>
+    <p class="main__catalog-item-description3">от <span>1000 ₽</span></p>
+    <button class="main__catalog-item-btn" type="button">Купить</button>
+</div>
+<div class="main__catalog-item">
+    <div class="main__catalog-item-img-wrapper">
+    <img class="main__catalog-item-img" src="img/catalogue/ariston-velis.png" alt="Ariston"></div>
+    <p class="main__catalog-item-description1">С040</p>
+    <p class="main__catalog-item-description2">Нагрев. элемент 1000 Вт. M6 для водонгр. Ariston VELIS (65151226)</p>
+    <p class="main__catalog-item-description3">от <span>1000 ₽</span></p>
+    <button class="main__catalog-item-btn" type="button">Купить</button>
+</div>
+<div class="main__catalog-item">
+    <div class="main__catalog-item-img-wrapper">
+    <img class="main__catalog-item-img" src="img/catalogue/ariston-velis.png" alt="Ariston"></div>
+    <p class="main__catalog-item-description1">С040</p>
+    <p class="main__catalog-item-description2">Нагрев. элемент 1000 Вт. M6 для водонгр. Ariston VELIS (65151226)</p>
+    <p class="main__catalog-item-description3">от <span>1000 ₽</span></p>
+    <button class="main__catalog-item-btn" type="button">Купить</button>
+</div>
+<div class="main__catalog-item">
+    <div class="main__catalog-item-img-wrapper">
+    <img class="main__catalog-item-img" src="img/catalogue/ariston-velis.png" alt="Ariston"></div>
+    <p class="main__catalog-item-description1">С040</p>
+    <p class="main__catalog-item-description2">Нагрев. элемент 1000 Вт. M6 для водонгр. Ariston VELIS (65151226)</p>
+    <p class="main__catalog-item-description3">от <span>1000 ₽</span></p>
+    <button class="main__catalog-item-btn" type="button">Купить</button>
+</div>
+<div class="main__catalog-item">
+    <div class="main__catalog-item-img-wrapper">
+    <img class="main__catalog-item-img" src="img/catalogue/ariston-velis.png" alt="Ariston"></div>
+    <p class="main__catalog-item-description1">С040</p>
+    <p class="main__catalog-item-description2">Нагрев. элемент 1000 Вт. M6 для водонгр. Ariston VELIS (65151226)</p>
+    <p class="main__catalog-item-description3">от <span>1000 ₽</span></p>
+    <button class="main__catalog-item-btn" type="button">Купить</button>
+</div>
+<div class="main__catalog-item">
+    <div class="main__catalog-item-img-wrapper">
+    <img class="main__catalog-item-img" src="img/catalogue/ariston-velis.png" alt="Ariston"></div>
+    <p class="main__catalog-item-description1">С040</p>
+    <p class="main__catalog-item-description2">Нагрев. элемент 1000 Вт. M6 для водонгр. Ariston VELIS (65151226)</p>
+    <p class="main__catalog-item-description3">от <span>1000 ₽</span></p>
+    <button class="main__catalog-item-btn" type="button">Купить</button>
+</div>
+<div class="main__catalog-item">
+    <div class="main__catalog-item-img-wrapper">
+    <img class="main__catalog-item-img" src="img/catalogue/ariston-velis.png" alt="Ariston"></div>
+    <p class="main__catalog-item-description1">С040</p>
+    <p class="main__catalog-item-description2">Нагрев. элемент 1000 Вт. M6 для водонгр. Ariston VELIS (65151226)</p>
+    <p class="main__catalog-item-description3">от <span>1000 ₽</span></p>
+    <button class="main__catalog-item-btn" type="button">Купить</button>
+</div>
+<div class="main__catalog-item">
+    <div class="main__catalog-item-img-wrapper">
+    <img class="main__catalog-item-img" src="img/catalogue/ariston-velis.png" alt="Ariston"></div>
+    <p class="main__catalog-item-description1">С040</p>
+    <p class="main__catalog-item-description2">Нагрев. элемент 1000 Вт. M6 для водонгр. Ariston VELIS (65151226)</p>
+    <p class="main__catalog-item-description3">от <span>1000 ₽</span></p>
+    <button class="main__catalog-item-btn" type="button">Купить</button>
+</div>
+<div class="main__catalog-item">
+    <div class="main__catalog-item-img-wrapper">
+    <img class="main__catalog-item-img" src="img/catalogue/ariston-velis.png" alt="Ariston"></div>
+    <p class="main__catalog-item-description1">С040</p>
+    <p class="main__catalog-item-description2">Нагрев. элемент 1000 Вт. M6 для водонгр. Ariston VELIS (65151226)</p>
+    <p class="main__catalog-item-description3">от <span>1000 ₽</span></p>
+    <button class="main__catalog-item-btn" type="button">Купить</button>
+</div>
+<div class="main__catalog-item">
+    <div class="main__catalog-item-img-wrapper">
+    <img class="main__catalog-item-img" src="img/catalogue/ariston-velis.png" alt="Ariston"></div>
+    <p class="main__catalog-item-description1">С040</p>
+    <p class="main__catalog-item-description2">Нагрев. элемент 1000 Вт. M6 для водонгр. Ariston VELIS (65151226)</p>
+    <p class="main__catalog-item-description3">от <span>1000 ₽</span></p>
+    <button class="main__catalog-item-btn" type="button">Купить</button>
+</div>
+<div class="main__catalog-item">
+    <div class="main__catalog-item-img-wrapper">
+    <img class="main__catalog-item-img" src="img/catalogue/ariston-velis.png" alt="Ariston"></div>
+    <p class="main__catalog-item-description1">С040</p>
+    <p class="main__catalog-item-description2">Нагрев. элемент 1000 Вт. M6 для водонгр. Ariston VELIS (65151226)</p>
+    <p class="main__catalog-item-description3">от <span>1000 ₽</span></p>
+    <button class="main__catalog-item-btn" type="button">Купить</button>
+</div>
+<div class="main__catalog-item">
+    <div class="main__catalog-item-img-wrapper">
+    <img class="main__catalog-item-img" src="img/catalogue/ariston-velis.png" alt="Ariston"></div>
+    <p class="main__catalog-item-description1">С040</p>
+    <p class="main__catalog-item-description2">Нагрев. элемент 1000 Вт. M6 для водонгр. Ariston VELIS (65151226)</p>
+    <p class="main__catalog-item-description3">от <span>1000 ₽</span></p>
+    <button class="main__catalog-item-btn" type="button">Купить</button>
+</div>
+
+</div>
+
+
+</div>
+
+    </div>
+</main>
+
+
+</body>
+
+</html>
