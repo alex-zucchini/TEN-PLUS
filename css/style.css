@@ -551,6 +551,60 @@ button:focus {
     top: -5px;
 }
 
+/* banner */
+
+.banner {
+    height: 136px;
+    background: linear-gradient(90deg, #F39E8B 0%, #F17A7B 14.96%, #EC6373 28.23%, #C55C72 43.65%, #A15773 59.14%, #775576 72.36%, #4A5479 85.99%, #32547B 100%);
+}
+
+.banner-wrapper {
+ 
+    width: calc(100vw - 654px);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  height:100%;
+}
+
+.banner__discount {
+    width: 245px;
+    height: 50px;
+    font-weight: bold;
+font-size: 24px;
+line-height: 130%;
+text-transform: uppercase;
+color: #3F3C46;
+background-color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+white-space: pre;
+}
+
+.banner__discount span{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #E96273;
+}
+
+.banner h2 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.banner p {
+    font-size: 16px;
+    line-height: 130%;
+    color: #FFFFFF;
+}
+
 /* catalogue */
 .title-views-wrapper {
     display: flex;
