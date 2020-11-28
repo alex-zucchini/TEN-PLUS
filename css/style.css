@@ -91,6 +91,18 @@ button:focus {
     }
 }
 
+@media screen and (max-width:480px) {
+    .container {
+        width: calc(100vw - 40px);
+    }
+}
+
+@media screen and (max-width:360px) {
+    .container {
+        width: calc(100vw - 30px);
+    }
+}
+
 .header__row-top {
     display: flex;
     justify-content: space-between;
@@ -277,6 +289,12 @@ button:focus {
     }
 }
 
+@media screen and (max-width:600px) {
+    .header__catalog {
+        display: none;
+    }
+}
+
 .header__catalog-icon {
     margin-right: 11px;
 }
@@ -311,6 +329,25 @@ button:focus {
     }
 }
 
+
+
+@media screen and (max-width:680px) {
+    .header__search p {
+        display: none;
+       
+        
+    }
+}
+
+@media screen and (max-width:680px) {
+    .header__search {
+        min-width:48px;
+        justify-content: center;
+        padding:0;
+        width: 48px;
+    }
+}
+
 .header__search span {
     white-space: pre;
 }
@@ -324,6 +361,12 @@ button:focus {
 
 .header__search-icon {
     margin-right: 11px;
+}
+
+@media screen and (max-width:680px) {
+    .header__search-icon {
+        margin: 0;
+    }
 }
 
 .header__phone-cart-wrapper {
@@ -453,6 +496,13 @@ button:focus {
     }
 }
 
+@media screen and (max-width:400px) {
+    .header__hamburger-wrapper p{
+        display: none;
+        margin-left: 0;
+    }
+}
+
 .header__openbtn {
     font-size: 14px;
     cursor: pointer;
@@ -487,7 +537,7 @@ button:focus {
     display: flex;
 }
 
-.header__openbtn-lines {}
+
 
 .header__openbtn-lines::after {
     content: '';
