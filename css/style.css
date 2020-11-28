@@ -605,6 +605,54 @@ white-space: pre;
     color: #FFFFFF;
 }
 
+
+/* bestsellers */
+
+.bestsellers{
+    padding-bottom:80px;
+}
+
+/* banner sketch */
+
+.banner-sketch {
+    background-image: url("/img/banner-sketch.svg");
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 360px;
+}
+
+.banner-sketch h2 {
+    font-weight: bold;
+font-size: 42px;
+line-height: 142.69%;
+color: #FFFFFF;
+margin-bottom: 30px;
+}
+
+.banner-sketch p {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 165.19%;
+    color: #FFFFFF; 
+    margin-bottom: 26px;  
+}
+
+.banner-sketch button {
+    width: 214px;
+    height: 52px;
+    background: #6877FB;
+border-radius: 10px;
+font-weight: bold;
+font-size: 18px;
+line-height: 24px;
+text-align: center;
+letter-spacing: 0.1px;
+color: #FFFFFF;
+}
+
+
 /* catalogue */
 .title-views-wrapper {
     display: flex;
