@@ -606,13 +606,14 @@ white-space: pre;
 }
 
 
-/* bestsellers */
-
 .bestsellers{
     padding-bottom:80px;
 }
 
-/* banner sketch */
+
+.hot-offer {
+    padding-bottom:80px;
+}
 
 .banner-sketch {
     background: #2E2734;
