@@ -861,6 +861,49 @@ color: #3F3C46;
     left:-170px;
 }
 
+
+/* contacts page */
+.contacts {
+}
+
+.contacts__wrapper {
+    display: flex;
+}
+.contacts__text {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__text h1 {
+    padding-top: 59px;
+    margin-bottom: 82px;
+}
+
+.contacts__phone {
+    font-weight: bold;
+font-size: 36px;
+line-height: 142.69%;
+color: #EE887F;
+margin-bottom: 11px;
+}
+.contacts__email {
+    font-weight: 600;
+font-size: 28px;
+line-height: 142.69%;
+color: #3F3C46;
+margin-bottom: 31px;
+}
+.contacts__description {
+    width: 52%;
+    line-height: 191.69%;
+color: #3F3C46;
+}
+.contacts__map {
+    width: 65%;
+}
+
+
 /* catalogue */
 .title-views-wrapper {
     display: flex;
