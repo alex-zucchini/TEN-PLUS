@@ -714,6 +714,7 @@ transition:0.4s;
     width: 663px;
     height: 76px;
     padding-left: 24px;
+    padding-top: 25px;
     border-radius: 10px;
     outline: none;
     line-height: 25px;
@@ -801,6 +802,58 @@ font-size: 16px;
 line-height: 123.69%;
 text-align: right;
 text-decoration-line: underline;
+}
+
+
+/* about page */
+
+.about-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 37px;
+}
+
+.about-text-clients-wrapper {
+    width: 50%;
+}
+.about__text {
+    width: 65%;
+    margin-top: 35px;
+    margin-bottom: 90px;
+    line-height: 170.69%;
+color: #3F3C46;
+}
+.clients-list1 {
+    width: 442px;
+    height: auto;
+}
+.clients-list2 {
+    width: 442px;
+    height: auto;
+}
+.about-pic-wrapper {
+    width: 47%;
+    position: relative;
+    
+}
+.ten-photo {
+    width: 639px;
+    height: auto;
+}
+
+.warehouse-photo {
+    width: 410px;
+    height: 252px;
+    position: absolute;
+    top:400px;
+    left:200px;
+}
+.worker-photo {
+    width: 300px;
+    height: auto;
+    position: absolute;
+    top:318px;
+    left:-170px;
 }
 
 /* catalogue */
