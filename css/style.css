@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Bebas Neue; /* Гарнитура шрифта */
+    src: url(fonts/bebas-neue/BebasNeueBold.ttf); /* Путь к файлу со шрифтом */
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     color: #373F41;
@@ -611,12 +616,12 @@ white-space: pre;
 }
 
 .subtitle {
-font-family: 'Bebas Neue', cursive;
-font-style: normal;
-font-weight: bold;
-font-size: 32px;
-line-height: 142.69%;
-color: #000000;
+    font-family: 'Bebas Neue', cursive;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 142.69%;
+    color: #000000;
 }
 
 .hot-offer {
