@@ -966,7 +966,11 @@ color: #3F3C46;
     flex-direction: column;
     align-items: flex-start;
     margin-right: 81px;
+}
 
+.settings-sticky {
+    position:sticky;
+    top:50px;
 }
 
 .settings-wrapper h3 {
