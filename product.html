@@ -80,13 +80,22 @@
         <div class="container">
             <div class="product-wrapper">
                 <div class="product__description-wrapper">
-                    <p>Артикул: С040</p>
+                    <p class="articul">Артикул: С040</p>
                     <h1>Нагрев. элемент 1000 Вт. M6 для водонгр. Ariston VELIS (65151226)</h1>
                     <p>Мод.: ABS VLS PREMIUM PW 30-100, ABS VLS PW 30-100</p>
                     <p>Трубка термостата: 280 мм</p>
                     <p>Фланец: D-125 мм, 5 отверстий</p>
-                    <div></div>
-                    <button type="button">Добавить в заказ</button>
+                    <div class="price-quantity-widget-wrapper">
+                        <div class="product__price">
+                            <p>от </p><span>1000 ₽</span>
+                        </div>
+                    <div class="quantity-widget">
+                        <button class="quantity-widget__minus"><img src="/img/icons/minus.svg" alt="" class="quantity-widget__minus-icon"></button>
+                        <div class="quantity-widget__number">1</div>
+                        <button class="quantity-widget__plus"><img src="/img/icons/plus.svg" alt="" class="quantity-widget__plus-icon"></button>
+                    </div>
+                </div>
+                    <button type="button" class="add-btn">Добавить в заказ</button>
                 </div>
 
                             <div class="product-gallery">
@@ -110,7 +119,7 @@
             </div>
         </div>
     </main>
-
+    <script src="js/product.js"></script>
 </body>
 
 </html>
