@@ -636,10 +636,27 @@ border-radius: 30px;
     align-items: flex-start;
     justify-content: center;
     height: 360px;
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
 }
+
+.banner-sketch-bg-circles {
+    position: absolute;
+    z-index: 1;
+}
+.banner-sketch-bg-heaters {
+    position: absolute;
+    z-index: 1;
+    right:0;
+    bottom:0;
+}
+
 
 .banner-sketch-wrapper {
     margin-left: 100px;
+    position: absolute;
+    z-index: 10;
 }
 
 .banner-sketch h2 {
