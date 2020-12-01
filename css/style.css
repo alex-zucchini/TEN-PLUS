@@ -5,7 +5,7 @@
 @font-face {
     font-family: Bebas Neue;
     /* Гарнитура шрифта */
-    src: url(fonts/bebas-neue/BebasNeueBold.ttf);
+    src: url(../fonts/bebas-neue/BebasNeueBold.ttf);
     /* Путь к файлу со шрифтом */
 }
 

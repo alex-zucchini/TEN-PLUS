@@ -14,6 +14,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> -->
     <title>ТЭН ПЛЮС</title>
+
+    <!-- Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -293,7 +297,7 @@
         <div class="container">
             <div class="banner-sketch">
                 <img src="img/index-page-banner__bg-circles.svg" alt="" class="banner-sketch-bg-circles">
-                <img src="img/index-page-banner__heaters.svg" alt="" class="banner-sketch-bg-heaters">
+                <img src="img/index-page-banner__heaters.svg" alt="" class="banner-sketch-bg-heaters" data-aos="fade-up" data-aos-delay="100">
                 <div class="banner-sketch-wrapper">
                     <h2>Изготовим ТЭНы по вашему эскизу</h2>
                     <p>Наше производство в Калужской области позволяет изготавливать ТЭНы любой сложности по пожеланиям
@@ -489,6 +493,11 @@
     </footer>
 
     <script src="js/tilt-animation.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
     
 </body>
 
