@@ -17,6 +17,7 @@ body {
     /* letter-spacing: ?; */
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
     -webkit-perspective: 2400px;
     perspective: 2400px;
 }
@@ -1832,7 +1833,7 @@ footer {
 /* Index page hero */
 
 .index-page-hero {
-    padding: 40px 0;
+    padding: 80px 0;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -1849,6 +1850,7 @@ footer {
     display: flex;
     width: 90vw;
     -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
 
@@ -1863,6 +1865,7 @@ footer {
     color: #000;
     z-index: 10;
     -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
 
@@ -1903,16 +1906,15 @@ footer {
 
 .index-page-hero__image-wrapper {
     position: absolute;
-    top: 30px;
+    top: 40px;
     right: 160px;
     z-index: 60;
     -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
 
-/* .index-page-hero__image-wrapper--2 {
-    right: 150px;
-} */
+
 
 .index-page-hero__image {
     height: 340px;
@@ -1945,12 +1947,36 @@ footer {
 }
 
 .level-2 {
-    transform: translateZ(80px);
-    -webkit-transform: translateZ(80px);
-    -moz-transform: translateZ(80px);
-    -ms-transform: translateZ(80px);
-    -o-transform: translateZ(80px);
+    transform: translateZ(100px);
+    -webkit-transform: translateZ(100px);
+    -moz-transform: translateZ(100px);
+    -ms-transform: translateZ(100px);
+    -o-transform: translateZ(100px);
 }
+
+/* Styles for Firefox (3D is not working correctly) */
+@-moz-document url-prefix() {
+    .index-page-hero {
+        padding: 80px 0;
+    }
+    .index-page-hero__image-wrapper {
+        top: -20px;
+    }
+    .index-page-hero__card-heading {
+        font-weight: normal;
+    }
+    .subtitle {
+        font-weight: normal;
+    }
+    .index-page-hero__image-wrapper--2 {
+        right: 130px;
+    }
+    .index-page-hero__card-info {
+        margin-bottom: 0;
+    }
+  }
+
+
 
 /* Index page hero tags */
 
@@ -1964,7 +1990,7 @@ footer {
     grid-template-columns: repeat(auto-fill, minmax(255px, 1fr));
     grid-row-gap: 32px;
     grid-column-gap: 32px;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 .index-page-hero__tag {

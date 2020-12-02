@@ -1926,7 +1926,4 @@ document.addEventListener("DOMContentLoaded", function () {
     cx = window.innerWidth / 2, cy = window.innerHeight / 2, t.addEventListener("mousemove", function (t) {
         clientX = t.pageX, clientY = t.pageY, request = requestAnimationFrame(e)
     })
-    , gsap.to(".card", {
-        zoom: .98
-    })
 });
