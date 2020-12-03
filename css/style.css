@@ -685,6 +685,7 @@ border-radius: 20px;
 .tank-big {
     width: 198px;
     height: auto;
+    margin-bottom: 36px;
 }
 
 /* banner */
