@@ -883,36 +883,39 @@ border-radius: 20px;
     padding-bottom: 80px;
 }
 
+
+/* Sketch banner */
 .banner-sketch {
     background: #2E2734;
     border-radius: 30px;
-    
-    min-height: 360px;
+    /* min-height: 360px; */
     position: relative;
     z-index: 5;
     overflow: hidden;
     margin-bottom: 40px;
 }
-
-
+/* 
 @media screen and (max-width:1470px){
     .banner-sketch {
         min-height: 500px;
     }
-
 }
 
 @media screen and (max-width:1050px){
     .banner-sketch {
         display: flex;
-        min-height: 800px;
+        min-height: 600px;
         justify-content: center;
-       
     }
+} */
 
-}
-
-
+/* @media screen and (max-width:900px){
+    .banner-sketch {
+        display: flex;
+        min-height: 700px;
+        justify-content: center;
+    }
+} */
 
 .banner-sketch-bg-circles {
     position: absolute;
@@ -935,19 +938,49 @@ border-radius: 20px;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-
     z-index: 20;
-    
 }
 
-@media screen and (max-width:1050px){
+@media screen and (max-width: 1470px){
     .banner-sketch-wrapper {
-        display: flex;
-        flex-direction:column;
-        justify-content: flex-start;
-        
+        margin: 66px 100px 100px 100px;
     }
+}
 
+@media screen and (max-width: 1200px){
+    .banner-sketch-bg-heaters {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 1030px){
+    .banner-sketch-wrapper {
+        margin: 66px 100px 200px 100px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .banner-sketch-wrapper {
+        margin: 66px 100px 340px 100px;
+    }
+}
+
+@media screen and (max-width: 580px){
+    .banner-sketch-wrapper {
+        margin: 60px 60px 260px 60px;
+    }
+    .banner-sketch-bg-heaters {
+        height: 240px;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .banner-sketch-wrapper {
+        margin: 40px 40px 240px 40px;
+    }
+    .banner-sketch-bg-heaters {
+        height: 200px;
+    }
 }
 
 .banner-sketch h2 {
@@ -956,14 +989,12 @@ border-radius: 20px;
     line-height: 142.69%;
     color: #FFFFFF;
     margin-bottom: 30px;
-
 }
 
 @media screen and (max-width:1110px){
     .banner-sketch h2 {
         width: 400px;
     }
-
 }
 
 @media screen and (max-width:610px){
@@ -987,7 +1018,6 @@ border-radius: 20px;
     }
 }
 
-
 .banner-sketch p {
     font-weight: 600;
     font-size: 18px;
@@ -1001,7 +1031,6 @@ border-radius: 20px;
     .banner-sketch p {
         font-size: 16px;
     }
-
 }
 
 @media screen and (max-width:950px){
@@ -1009,8 +1038,6 @@ border-radius: 20px;
         width: 80%;
     }
 }
-
-
 
 .banner-sketch button {
     width: 214px;
@@ -1034,6 +1061,8 @@ border-radius: 20px;
     background-color: #4658ff;
 }
 
+
+
 /* online require form */
 
 .require {
@@ -1041,9 +1070,6 @@ border-radius: 20px;
     padding-top: 45px;
     background-color: #EDF0FF;
 }
-
-
-
 
 .require__form {
     display: flex;
