@@ -590,15 +590,17 @@ header {
     
 }
 .hidden-menu__block {
-    width: 24%;
+    width: 25%;
     height: 80%;
 }
 .hidden-menu__contains {
+    width: 20%;
     border-right: 2px solid #FBF2F2;;
 }
 
 .hidden-menu__contains ul {
     list-style: none;
+    position: relative;
 }
 
 .hidden-menu__contains li {
@@ -610,12 +612,26 @@ header {
     line-height: 142.69%;
     color: #000000;
 }
+.hidden-menu__contains-item1::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 11px;
+    background-image: url("/img/hidden-menu-angle.svg");
+    top: 7px;
+    left:61px;
+   
+}
+
 .hidden-menu__contains li:first-child {
     color: #EE887F;
 }
 
+
+
 .hidden-menu__tens ul{
     list-style: none;
+    padding-left: 15px;
 }
 
 .hidden-menu__tens li{
