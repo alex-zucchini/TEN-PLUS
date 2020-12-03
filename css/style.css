@@ -886,16 +886,33 @@ border-radius: 20px;
 .banner-sketch {
     background: #2E2734;
     border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    
     min-height: 360px;
     position: relative;
     z-index: 5;
     overflow: hidden;
     margin-bottom: 40px;
 }
+
+
+@media screen and (max-width:1470px){
+    .banner-sketch {
+        min-height: 500px;
+    }
+
+}
+
+@media screen and (max-width:1050px){
+    .banner-sketch {
+        display: flex;
+        min-height: 800px;
+        justify-content: center;
+       
+    }
+
+}
+
+
 
 .banner-sketch-bg-circles {
     position: absolute;
@@ -913,7 +930,24 @@ border-radius: 20px;
 
 .banner-sketch-wrapper {
     margin: 66px 100px;
-    z-index: 10;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    z-index: 20;
+    
+}
+
+@media screen and (max-width:1050px){
+    .banner-sketch-wrapper {
+        display: flex;
+        flex-direction:column;
+        justify-content: flex-start;
+        
+    }
+
 }
 
 .banner-sketch h2 {
@@ -925,6 +959,35 @@ border-radius: 20px;
 
 }
 
+@media screen and (max-width:1110px){
+    .banner-sketch h2 {
+        width: 400px;
+    }
+
+}
+
+@media screen and (max-width:610px){
+    .banner-sketch h2 {
+        font-size: 34px;
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:610px){
+    .banner-sketch h2 {
+        font-size: 34px;
+        width: 350px;
+    }
+}
+
+@media screen and (max-width:450px){
+    .banner-sketch h2 {
+        font-size: 24px;
+        width: 250px;
+    }
+}
+
+
 .banner-sketch p {
     font-weight: 600;
     font-size: 18px;
@@ -933,6 +996,21 @@ border-radius: 20px;
     margin-bottom: 36px;
     width: 52%;
 }
+
+@media screen and (max-width:1110px){
+    .banner-sketch p {
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width:950px){
+    .banner-sketch p {
+        width: 80%;
+    }
+}
+
+
 
 .banner-sketch button {
     width: 214px;
