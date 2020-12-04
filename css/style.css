@@ -1049,10 +1049,42 @@ border-radius: 20px;
     background-color: #EDF0FF;
 }
 
+@media screen and (max-width:1900px){
+.require-container .subtitle {
+    text-align:center;
+}
+}
+
 .require__form {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+@media screen and (max-width:1900px){
+    .require__form {
+        flex-direction: column
+    }
+}
+
+.require__inputs {
+  width: 620px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width:1900px){
+    .require__inputs {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .require__inputs {
+       flex-direction: column;
+       align-items: center;
+       margin-bottom: 30px;
+    }
 }
 
 #require-name,
@@ -1065,6 +1097,19 @@ border-radius: 20px;
     line-height: 25px;
     color: #928F8F;
     border: none;
+}
+
+@media screen and (max-width:700px){
+    #require-name {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:700px){
+    #require-name,
+    #require-phone {
+        width: 65vw;
+    }
 }
 
 #require-name:active,
@@ -1085,6 +1130,20 @@ border-radius: 20px;
     border: none;
 }
 
+@media screen and (max-width:1900px){
+    #require-message {
+        width: 626px;
+        margin-bottom: 40px;
+    } 
+}
+
+@media screen and (max-width:700px){
+    #require-message {
+        width: 65vw;
+        margin-bottom: 30px;
+    }
+}
+
 .require__send-button {
     width: 314px;
     height: 76px;
@@ -1101,6 +1160,13 @@ border-radius: 20px;
     -moz-transition: 0.2s ease-in;
     -ms-transition: 0.2s ease-in;
     -o-transition: 0.2s ease-in;
+}
+
+@media screen and (max-width:486px){
+    .require__send-button {
+        width: 65vw;
+        font-size: 18px;
+    }
 }
 
 .require__send-button:hover {
