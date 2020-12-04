@@ -894,28 +894,6 @@ border-radius: 20px;
     overflow: hidden;
     margin-bottom: 40px;
 }
-/* 
-@media screen and (max-width:1470px){
-    .banner-sketch {
-        min-height: 500px;
-    }
-}
-
-@media screen and (max-width:1050px){
-    .banner-sketch {
-        display: flex;
-        min-height: 600px;
-        justify-content: center;
-    }
-} */
-
-/* @media screen and (max-width:900px){
-    .banner-sketch {
-        display: flex;
-        min-height: 700px;
-        justify-content: center;
-    }
-} */
 
 .banner-sketch-bg-circles {
     position: absolute;
