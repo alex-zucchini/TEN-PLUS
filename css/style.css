@@ -1044,7 +1044,7 @@ border-radius: 20px;
 /* online require form */
 
 .require {
-    padding-bottom: 81px;
+    padding-bottom: 55px;
     padding-top: 45px;
     background-color: #EDF0FF;
 }
@@ -1087,6 +1087,8 @@ border-radius: 20px;
     }
 }
 
+
+
 #require-name,
 #require-phone {
     width: 285px;
@@ -1099,6 +1101,8 @@ border-radius: 20px;
     border: none;
 }
 
+
+
 @media screen and (max-width:700px){
     #require-name {
         margin-bottom: 30px;
@@ -1108,7 +1112,16 @@ border-radius: 20px;
 @media screen and (max-width:700px){
     #require-name,
     #require-phone {
-        width: 65vw;
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width:486px){
+    #require-name,
+    #require-phone { 
+        font-size:16px;
+        height: 60px;
+        
     }
 }
 
@@ -1134,12 +1147,13 @@ border-radius: 20px;
     #require-message {
         width: 626px;
         margin-bottom: 40px;
+        height: 120px;
     } 
 }
 
 @media screen and (max-width:700px){
     #require-message {
-        width: 65vw;
+        width: 80vw;
         margin-bottom: 30px;
     }
 }
@@ -1164,7 +1178,7 @@ border-radius: 20px;
 
 @media screen and (max-width:486px){
     .require__send-button {
-        width: 65vw;
+        width: 80vw;
         font-size: 18px;
     }
 }
