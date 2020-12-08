@@ -1,35 +1,9 @@
-// Power range slider
+// show catalog menu
 
-let powerRangeSlider = new ZBRangeSlider('power-range-slider');
+let catalogBtn = document.querySelector(".header__catalog")
+let catalog = document.querySelector(".hidden-menu")
 
-powerRangeSlider.onChange = function (min, max) {
-    powerRangeSlider.slider.parentElement.querySelector('.range-slider__result-min').innerHTML = min;
-    powerRangeSlider.slider.parentElement.querySelector('.range-slider__result-max').innerHTML = max;
+catalogBtn.onclick = function() {
+    catalog.classList.toggle("shown")
+    catalog.classList.toggle("hidden-menu__shown")
 }
-
-powerRangeSlider.didChanged = function (min, max) {
-    powerRangeSlider.slider.parentElement.querySelector('.range-slider__result-min').innerHTML = min;
-    powerRangeSlider.slider.parentElement.querySelector('.range-slider__result-max').innerHTML = max;
-}
-
-// call reset if needed
-// powerRangeSlider.reset();
-
-
-
-// length range slider
-
-let lengthRangeSlider = new ZBRangeSlider('length-range-slider');
-
-lengthRangeSlider.onChange = function (min, max) {
-    lengthRangeSlider.slider.parentElement.querySelector('.range-slider__result-min').innerHTML = min;
-    lengthRangeSlider.slider.parentElement.querySelector('.range-slider__result-max').innerHTML = max;
-}
-
-lengthRangeSlider.didChanged = function (min, max) {
-    lengthRangeSlider.slider.parentElement.querySelector('.range-slider__result-min').innerHTML = min;
-    lengthRangeSlider.slider.parentElement.querySelector('.range-slider__result-max').innerHTML = max;
-}
-
-// call reset if needed
-// lengthRangeSlider.reset();
