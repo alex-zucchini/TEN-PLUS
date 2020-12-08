@@ -579,7 +579,11 @@ header {
 /* hidden menu */
 
 .hidden-menu {
+display:none;
+}
 
+.hidden-menu__shown {
+    display:block;
 }
 
 .hidden-menu__wrapper {
