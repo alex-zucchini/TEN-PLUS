@@ -10,10 +10,14 @@ catalogBtn.onclick = function() {
 
 let catalogContain1 = document.querySelector(".hidden-menu__contains1")
 let catalogContain2 = document.querySelector(".hidden-menu__contains2")
+let catalogContain3 = document.querySelector(".hidden-menu__contains3")
+let catalogContain4 = document.querySelector(".hidden-menu__contains4")
+let catalogContain5 = document.querySelector(".hidden-menu__contains5")
+let catalogContain6 = document.querySelector(".hidden-menu__contains6")
 let catalogContent = document.querySelector(".hidden-menu__content")
 
-catalogContain1.onclick = function() {
-    catalogContent.innerHTML = `<ul class="hidden-menu__tens">
+catalogContain1.addEventListener("mouseover", function() { 
+    catalogContent.innerHTML = `<ul>
     <li><a href="#">ТЭНы для водонагревателей</a></li>
     <li><a href="#">ТЭНы для стиральных машин</a></li>
     <li><a href="#">Воздушные ТЭНы</a></li>
@@ -27,10 +31,55 @@ catalogContain1.onclick = function() {
     <li><a href="#">Запчасти для ТЭНов</a></li>
     </ul>`
 }
+)
 
+catalogContain2.addEventListener("mouseover", function() { 
+    catalogContent.innerHTML = `<ul>
+    <li><a href="#">ТЭНы</a></li>
+    <li><a href="#">Помпы</a></li>
+    <li><a href="#">Магнитные электроклапаны</a></li>
+    <li><a href="#">Подшипники</a></li>
+    <li><a href="#">Смазки, средства и спреи</a></li>
+    <li><a href="#">Сальники</a></li>
+    <li><a href="#">Ремни</a></li>
+    </ul>`
+}
+)
 
+catalogContain3.addEventListener("mouseover", function() { 
+    catalogContent.innerHTML = `<ul>
+    <li><a href="#">Конфорки чугунные</a></li>
+    <li><a href="#">Электроконфорки промышленные</a></li>
+    </ul>`
+}
+)
 
+catalogContain4.addEventListener("mouseover", function() { 
+    catalogContent.innerHTML = `<ul>
+    <li><a href="#">Газовые плиты</a></li>
+    <li><a href="#">Электроплиты</a></li>
+    </ul>`
+}
+)
 
+catalogContain5.addEventListener("mouseover", function() { 
+    catalogContent.innerHTML = `<ul>
+    <li><a href="#">Переключатели</a></li>
+    <li><a href="#">Термостаты</a></li>
+    <li><a href="#">Терморегуляторы</a></li>
+    <li><a href="#">Реле</a></li>
+    <li><a href="#">Магнетроны</a></li>
+    <li><a href="#">Предохранительные клапаны</a></li>
+    </ul>`
+}
+)
 
-
+catalogContain6.addEventListener("mouseover", function() { 
+    catalogContent.innerHTML = `<ul>
+    <li><a href="#">Заглушки в ТЭН</a></li>
+    <li><a href="#">Шнур сетевой</a></li>
+    <li><a href="#">Защита водонагревателя</a></li>
+    </ul>`
+}
+)
 

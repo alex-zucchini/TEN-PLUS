@@ -656,13 +656,8 @@ margin-bottom: 10px;
  text-decoration: underline;
 }
 
-.hidden-menu__tens {
-    display: none;
-}
 
-.hidden-menu__washers {
-    display: none;
-}
+
 
 .hidden-menu__small-pics {
 display: flex;
