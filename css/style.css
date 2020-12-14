@@ -1228,7 +1228,7 @@ footer {
         flex-direction:column;
     }
     .footer-container {
-width:calc(100vw - 25%);
+width:75vw;
     }
 }
 
