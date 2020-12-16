@@ -14,6 +14,12 @@ let catalogContent = document.querySelector(".hidden-menu__content")
 
 catalogBtn.onclick = function () {
     catalog.classList.toggle("shown")
+
+    const heroTiltElements = document.querySelector(".index-page-hero__wrapper")
+
+    if (document.body.contains(heroTiltElements)) {
+        heroTiltElements.classList.toggle("index-page-hero__wrapper--hidden")
+    }
 }
 
 function refreshCatalogMenuItems() {
@@ -52,7 +58,6 @@ catalogContain2.addEventListener("mouseover", function () {
     <li><a href="#">Сальники</a></li>
     <li><a href="#">Ремни</a></li>
     </ul>`
-    
 })
 
 catalogContain3.addEventListener("mouseover", function () {
@@ -61,19 +66,12 @@ catalogContain3.addEventListener("mouseover", function () {
     catalogContent.innerHTML = `<ul>
     <li><a href="#">Конфорки чугунные</a></li>
     <li><a href="#">Электроконфорки промышленные</a></li>
-    </ul>`
-})
-
-catalogContain4.addEventListener("mouseover", function () {
-    refreshCatalogMenuItems()
-    this.classList.add("chosen")
-    catalogContent.innerHTML = `<ul>
     <li><a href="#">Газовые плиты</a></li>
     <li><a href="#">Электроплиты</a></li>
     </ul>`
 })
 
-catalogContain5.addEventListener("mouseover", function () {
+catalogContain4.addEventListener("mouseover", function () {
     refreshCatalogMenuItems()
     this.classList.add("chosen")
     catalogContent.innerHTML = `<ul>
@@ -86,7 +84,7 @@ catalogContain5.addEventListener("mouseover", function () {
     </ul>`
 })
 
-catalogContain6.addEventListener("mouseover", function () {
+catalogContain5.addEventListener("mouseover", function () {
     refreshCatalogMenuItems()
     this.classList.add("chosen")
     catalogContent.innerHTML = `<ul>
@@ -95,3 +93,26 @@ catalogContain6.addEventListener("mouseover", function () {
     <li><a href="#">Защита водонагревателя</a></li>
     </ul>`
 })
+
+
+// Mobile catalog menu
+// const mobileCatalogSubmenuContainer = document.createElement('div')
+
+// catalogContain1.addEventListener("mouseover", function () {
+//     refreshCatalogMenuItems()
+//     this.classList.add("chosen")
+//     this.parentNode.insertBefore( mobileCatalogSubmenuContainer, this.nextSibling )
+//     mobileCatalogSubmenuContainer.innerHTML = `<ul>
+//     <li><a href="#">ТЭНы для водонагревателей</a></li>
+//     <li><a href="#">ТЭНы для стиральных машин</a></li>
+//     <li><a href="#">Воздушные ТЭНы</a></li>
+//     <li><a href="#">Водяные ТЭНы</a></li>
+//     <li><a href="#">ТЭНы для промышленных и бытовых плит</a></li>
+//     <li><a href="#">ТЭНы бытовые</a></li>
+//     <li><a href="#">ТЭНы для дистилляторов и кулеров</a></li>
+//     <li><a href="#">ТЭНы для сауны</a></li>
+//     <li><a href="#">Блоки ТЭН</a></li>
+//     <li><a href="#">Нагревательные элементы для конвекторов</a></li>
+//     <li><a href="#">Запчасти для ТЭНов</a></li>
+//     </ul>`
+// })
