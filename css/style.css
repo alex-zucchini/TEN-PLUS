@@ -28,7 +28,6 @@ body {
     }
 }
 
-
 .container {
     width: calc(100vw - 120px);
     max-width: 1692px;
@@ -586,6 +585,7 @@ header {
     z-index: 1000;
 }
 
+
 .hidden-menu__wrapper {
     margin-top: 34px;
     height: 494px;
@@ -596,6 +596,12 @@ header {
 @media screen and (max-width: 1200px) {
     .hidden-menu__wrapper {
         justify-content: start;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .hidden-menu__wrapper {
+        height: 600px;
     }
 }
 
@@ -639,6 +645,13 @@ header {
     }
 }
 
+@media screen and (max-width:760px) {
+    .hidden-menu__contains {
+        width: 100%;
+        border-right: none;
+    }
+}
+
 .hidden-menu__contains ul {
     list-style: none;
 }
@@ -664,9 +677,43 @@ header {
     }
 }
 
+@media screen and (max-width: 760px) {
+    .hidden-menu__contains__item {
+        margin-bottom: 12px;
+    }
+}
+
+
 .hidden-menu__content ul {
     list-style: none;
     padding-left: 15px;
+}
+
+.hidden-menu__contains__item-arrow {
+    display: none;
+    width: 6px;
+    height: 11px;
+}
+.hidden-menu__contains__item-arrow--chosen {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+@media screen and (max-width: 760px) {
+    .hidden-menu__contains__item-arrow {
+        display: inline-block;
+    }
+}
+
+.hidden-menu__contains__item-arrow-icon {
+    fill: #000000;
+}
+
+.hidden-menu__contains__item-arrow-icon--chosen {
+    fill: #EE887F;
 }
 
 .hidden-menu__content li {
@@ -683,6 +730,34 @@ header {
     text-decoration: underline;
 }
 
+
+/* Mobile content wrapper */
+
+.hidden-menu__mobile-content {
+    margin-bottom: 24px;
+}
+
+.hidden-menu__mobile-content ul {
+    list-style: none;
+    padding-left: 15px;
+}
+
+.hidden-menu__mobile-content li {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 142.69%;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.hidden-menu__mobile-content li:hover {
+    text-decoration: underline;
+}
+
+
+
 .chosen {
     color: #EE887F;
 }
@@ -694,7 +769,13 @@ header {
     width: 6px;
     height: 11px;
     background-image: url("/img/hidden-menu-angle.svg");
-    top: 7px;
+    top: 5px;
+}
+
+@media screen and (max-width: 760px) {
+    .chosen ::after {
+        display: none;
+    }
 }
 
 .hidden-menu__small-pics {
