@@ -12,15 +12,57 @@ let catalogContain5 = document.querySelector(".hidden-menu__contains5")
 let catalogContain6 = document.querySelector(".hidden-menu__contains6")
 let catalogContent = document.querySelector(".hidden-menu__content")
 
-catalogBtn.onclick = function () {
-    catalog.classList.toggle("shown")
+// // catalogBtn.onclick = function () {
+// //     catalog.classList.toggle("shown")
+// const heroTiltElements = document.querySelector(".index-page-hero__wrapper")
 
-    const heroTiltElements = document.querySelector(".index-page-hero__wrapper")
+// if (document.body.contains(heroTiltElements)) {
+//     heroTiltElements.classList.toggle("index-page-hero__wrapper--hidden")
+// }
+// }
 
-    if (document.body.contains(heroTiltElements)) {
-        heroTiltElements.classList.toggle("index-page-hero__wrapper--hidden")
-    }
-}
+
+
+
+
+
+function popupCatalogMenu() {
+    let popupStatus = false;
+    let mouseOverPopup = false;
+  
+    catalogBtn.onmouseenter = function () {
+        catalog.style.display = "block";
+      popupStatus = true;
+    };
+  
+    catalogBtn.onmouseleave = function () {
+      if (popupStatus == true && mouseOverPopup == false) {
+        catalog.style.display = "none";
+      } else {
+        catalog.style.display = "flex";
+      }
+    };
+  
+    catalog.onmouseenter = function () {
+        catalog.style.display = "block";
+      mouseOverPopup = true;
+      popupStatus = true;
+    };
+  
+    catalog.onmouseleave = function () {
+        catalog.style.display = "none";
+      popupStatus = false;
+      mouseOverPopup = false;
+    };
+
+  }
+  
+  popupCatalogMenu();
+
+
+
+
+
 
 function refreshCatalogMenuItems() {
     for (let item of catalogMenuItems) {
