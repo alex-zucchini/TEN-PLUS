@@ -694,6 +694,7 @@ header {
     width: 6px;
     height: 11px;
 }
+
 .hidden-menu__contains__item-arrow--chosen {
     -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
