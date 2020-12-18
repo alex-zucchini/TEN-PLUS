@@ -1194,6 +1194,8 @@ header {
     padding-bottom: 55px;
     padding-top: 45px;
     background-color: #EDF0FF;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 @media screen and (max-width:1900px) {
@@ -2478,6 +2480,7 @@ footer {
 
 .index-page-hero__card-info {
     margin-bottom: -40px;
+    margin-left: 24px;
 }
 
 .index-page-hero__card-heading {
@@ -2504,8 +2507,6 @@ footer {
     -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
-
-
 
 .index-page-hero__image {
     height: 340px;
@@ -2544,6 +2545,310 @@ footer {
     -ms-transform: translateZ(100px);
     -o-transform: translateZ(100px);
 }
+
+
+@media screen and (max-width:1810px) {
+    .level-2 {
+        transform: translateZ(60px);
+        -webkit-transform: translateZ(60px);
+        -moz-transform: translateZ(60px);
+        -ms-transform: translateZ(60px);
+        -o-transform: translateZ(60px);
+    }
+}
+
+@media screen and (max-width:1668px) {
+    body {
+        -webkit-perspective: 4400px;
+        perspective: 4400px;
+    }
+    .index-page-hero__card-info {
+        margin-left: 12px;
+    }
+    .index-page-hero__card-heading {
+        font-size: 36px;
+        margin-bottom: 20px;
+        max-width: 260px;
+    }
+    .index-page-hero__card-brands {
+        font-size: 18px;
+        max-width: 180px;
+        line-height: 130%;
+    }
+
+    .index-page-hero__image-wrapper {
+        position: absolute;
+        top: 0px;
+        right: 160px;
+    }
+
+    .level--2 {
+        transform: translateZ(-20px);
+        -webkit-transform: translateZ(-20px);
+        -moz-transform: translateZ(-20px);
+        -ms-transform: translateZ(-20px);
+        -o-transform: translateZ(-20px);
+}
+    
+    .level--1 {
+        transform: translateZ(-10px);
+        -webkit-transform: translateZ(-10px);
+        -moz-transform: translateZ(-10px);
+        -ms-transform: translateZ(-10px);
+        -o-transform: translateZ(-10px);
+}
+    
+    .level-1 {
+        transform: translateZ(10px);
+        -webkit-transform: translateZ(10px);
+        -moz-transform: translateZ(10px);
+        -ms-transform: translateZ(10px);
+        -o-transform: translateZ(10px);
+}
+    
+    .level-2 {
+        transform: translateZ(40px);
+        -webkit-transform: translateZ(40px);
+        -moz-transform: translateZ(40px);
+        -ms-transform: translateZ(40px);
+        -o-transform: translateZ(40px);
+}
+}
+
+@media screen and (max-width:1668px) {
+    body {
+        -webkit-perspective: 6400px;
+        perspective: 6400px;
+    }
+    .index-page-hero__card-info {
+        margin-left: 8px;
+    }
+    .index-page-hero__image-wrapper {
+        top: 0px;
+        right: 120px;
+    }
+    .index-page-hero__card--card1 {
+        background-position: right 0 center;
+    }
+    .index-page-hero__card--card2 {
+        background-position: right 0 center;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .index-page-hero__card {
+        height: 240px;
+        padding: 40px;
+    }
+    .index-page-hero__card-heading {
+        font-size: 32px;
+        margin-bottom: 20px;
+        max-width: 220px;
+    }
+    .index-page-hero__image {
+        height: 280px;
+    }
+    .index-page-hero__image-wrapper {
+        right: 60px;
+    }
+    .index-page-hero__card--card1 {
+        background-position: right -40px center;
+    }
+    .index-page-hero__card--card2 {
+        background-position: right -40px center;
+    }
+    .level-1 {
+        transform: translateZ(30px);
+        -webkit-transform: translateZ(30px);
+        -moz-transform: translateZ(30px);
+        -ms-transform: translateZ(30px);
+        -o-transform: translateZ(30px);
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .index-page-hero__card-info {
+        margin-left: 0;
+    }
+    .index-page-hero__card {
+        height: 200px;
+        padding: 40px;
+    }
+    .index-page-hero__card-heading {
+        font-size: 28px;
+        margin-bottom: 14px;
+        max-width: 200px;
+    }
+    .index-page-hero__card-brands {
+        font-size: 16px;
+        max-width: 180px;
+    }
+    .index-page-hero__image-wrapper {
+        right: 40px;
+    }
+    .index-page-hero__image {
+        height: 240px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .index-page-hero__cards-container {
+        flex-direction: column;
+    }
+    .index-page-hero__card {
+        width: 100%;
+        height: 280px;
+        padding: 60px;
+    }
+    .index-page-hero__card+.index-page-hero__card {
+        margin-left: 0;
+        margin-top: 60px;
+    }
+    .index-page-hero__card-heading {
+        font-size: 32px;
+        margin-bottom: 20px;
+        max-width: 220px;
+    }
+    .index-page-hero__card-brands {
+        font-size: 18px;
+        max-width: 180px;
+        line-height: 130%;
+    }
+    .index-page-hero__image-wrapper {
+        position: absolute;
+        top: 0px;
+        right: 160px;
+    }
+    .index-page-hero__image {
+        height: 320px;
+    }
+    .index-page-hero__card--card1 {
+        background-position: right 50px center;
+    }
+    .index-page-hero__card--card2 {
+        background-position: right 50px center;
+    }
+}
+
+@media screen and (max-width:720px) {
+    .index-page-hero__image-wrapper {
+        right: 80px;
+    }
+    .index-page-hero__card--card1 {
+        background-position: right -40px center;
+    }
+    .index-page-hero__card--card2 {
+        background-position: right -40px center;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .index-page-hero__card {
+        height: 240px;
+        padding: 40px;
+    }
+    .index-page-hero__card-info {
+        margin-bottom: -70px;
+    }
+    .index-page-hero__card-heading {
+        font-size: 28px;
+        margin-bottom: 10px;
+        max-width: 200px;
+    }
+    .index-page-hero__card-brands {
+        font-size: 16px;
+        max-width: 150px;
+    }
+    .index-page-hero__image-wrapper {
+        top: 20px;
+        right: 60px;
+    }
+    .index-page-hero__image {
+        height: 280px;
+    }
+    .index-page-hero__card--card1 {
+        background-position: right -40px center;
+    }
+    .index-page-hero__card--card2 {
+        background-position: right -40px center;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .index-page-hero__card {
+        height: 190px;
+        padding: 40px;
+    }
+    .index-page-hero__card-heading {
+        font-size: 24px;
+        margin-bottom: 10px;
+        max-width: 180px;
+    }
+    .index-page-hero__card-brands {
+        font-size: 16px;
+        max-width: 150px;
+    }
+    .index-page-hero__image-wrapper {
+        top: 30px;
+        right: 60px;
+    }
+    .index-page-hero__image {
+        height: 220px;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .index-page-hero {
+        padding: 40px 0;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .index-page-hero__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 20px 20px 40px 20px;
+    }
+
+    .index-page-hero__card+.index-page-hero__card {
+        margin-top: 30px;
+    }
+    .index-page-hero__card-heading {
+        font-size: 24px;
+        margin-bottom: 10px;
+        max-width: 95vw;
+        text-align: center;
+    }
+    .index-page-hero__card-brands {
+        font-size: 14px;
+        max-width: 95vw;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .index-page-hero__image-wrapper {
+        top: 20px;
+        right: auto;
+        left: auto;
+    }
+    .index-page-hero__image {
+        height: 160px;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+}
+    .index-page-hero__card--card1 {
+        background-position: center center;
+    }
+    .index-page-hero__card--card2 {
+        background-position: center center;
+    }
+}
+
+
 
 /* Styles for Firefox (3D is not working correctly) */
 @-moz-document url-prefix() {
