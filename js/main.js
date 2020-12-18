@@ -32,7 +32,7 @@ catalog.onmouseleave = function () {
     headerCatalogMenuTimer = setTimeout(function() {
         catalog.classList.remove("shown")
         if (document.body.contains(heroTiltElements)) {
-            // Hide main page hero 3D-elements
+            // Show main page hero 3D-elements
             heroTiltElements.classList.remove("index-page-hero__wrapper--hidden")
         }
     }, 1000)
