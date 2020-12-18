@@ -29,7 +29,7 @@ catalogBtn.onclick = function () {
 let headerCatalogMenuTimer
 
 catalog.onmouseleave = function () {
-    headerCatalogMenuTimer = setTimeout(function() {
+    headerCatalogMenuTimer = setTimeout(function () {
         catalog.classList.remove("shown")
         if (document.body.contains(heroTiltElements)) {
             // Show main page hero 3D-elements
@@ -38,11 +38,11 @@ catalog.onmouseleave = function () {
     }, 1000)
 }
 
-catalog.onmouseenter = function() {
+catalog.onmouseenter = function () {
     clearTimeout(headerCatalogMenuTimer)
 }
 
-catalogBtn.onmouseenter = function() {
+catalogBtn.onmouseenter = function () {
     clearTimeout(headerCatalogMenuTimer)
 }
 
