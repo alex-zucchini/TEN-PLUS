@@ -2816,8 +2816,8 @@ footer {
         margin-top: 30px;
     }
     .index-page-hero__card-heading {
-        font-size: 24px;
-        margin-bottom: 10px;
+        font-size: 21px;
+        margin-bottom: 6px;
         max-width: 95vw;
         text-align: center;
     }
@@ -2828,7 +2828,7 @@ footer {
         text-align: center;
     }
     .index-page-hero__image-wrapper {
-        top: 20px;
+        top: 30px;
         right: auto;
         left: auto;
     }
@@ -2845,6 +2845,12 @@ footer {
     }
     .index-page-hero__card--card2 {
         background-position: center center;
+    }
+}
+
+@media screen and (max-width:307px) {
+    .index-page-hero__card-brands {
+        display: none;
     }
 }
 
