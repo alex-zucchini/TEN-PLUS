@@ -1914,16 +1914,18 @@
     }) : delete t.default
 }), 
 
-
 document.addEventListener("DOMContentLoaded", function () {
     var t = document.querySelector(".index-page-hero");
 
-    function e() {
-        dx = clientX - cx, dy = clientY - cy, tiltx = dy / cy, tilty = dx / cx, radius = Math.sqrt(Math.pow(tiltx, 2) + Math.pow(tilty, 2)), degree = 2 * radius, gsap.to(".index-page-hero__cards-container", 1, {
-            transform: "rotate3d( ".concat(tiltx, ", ").concat(tilty, ", 0, ").concat(degree, "deg )")
+    if (window.innerWidth > 1100) {
+        function e() {
+            dx = clientX - cx, dy = clientY - cy, tiltx = dy / cy, tilty = dx / cx, radius = Math.sqrt(Math.pow(tiltx, 2) + Math.pow(tilty, 2)), degree = 2 * radius, gsap.to(".index-page-hero__cards-container", 1, {
+                transform: "rotate3d( ".concat(tiltx, ", ").concat(tilty, ", 0, ").concat(degree, "deg )")
+            })
+        }
+
+        cx = window.innerWidth / 2, cy = window.innerHeight / 2, t.addEventListener("mousemove", function (t) {
+            clientX = t.pageX, clientY = t.pageY, request = requestAnimationFrame(e)
         })
     }
-    cx = window.innerWidth / 2, cy = window.innerHeight / 2, t.addEventListener("mousemove", function (t) {
-        clientX = t.pageX, clientY = t.pageY, request = requestAnimationFrame(e)
-    })
 });

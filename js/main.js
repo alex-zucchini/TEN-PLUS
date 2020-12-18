@@ -53,7 +53,6 @@ function refreshCatalogMenuItems() {
 }
 
 if (window.innerWidth > 759) {
-
     catalogContain1.addEventListener("mouseover", function () {
         refreshCatalogMenuItems()
         this.classList.add("chosen")
@@ -119,7 +118,6 @@ if (window.innerWidth > 759) {
         <li><a href="#">Защита водонагревателя</a></li>
         </ul>`
     })
-
 }
 
 
@@ -136,7 +134,6 @@ function refreshMobileCatalogSubmenu() {
 }
 
 if (window.innerWidth < 760) {
-
     document.querySelector(".hidden-menu__content").style.display = "none"
 
     catalogContain1.addEventListener("click", function () {
@@ -228,5 +225,4 @@ if (window.innerWidth < 760) {
     if (document.body.contains(catalogContain1)) {
         catalogContain1.click();
     }
-
 }
