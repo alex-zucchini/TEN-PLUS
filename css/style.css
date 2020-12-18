@@ -756,12 +756,9 @@ header {
     text-decoration: underline;
 }
 
-
-
 .chosen {
     color: #EE887F;
 }
-
 
 .chosen ::after {
     content: '';
@@ -769,7 +766,7 @@ header {
     width: 6px;
     height: 11px;
     background-image: url("/img/hidden-menu-angle.svg");
-    top: 5px;
+    top: 7px;
 }
 
 @media screen and (max-width: 760px) {
@@ -2598,7 +2595,8 @@ footer {
     align-items: center;
     background: #FCF8F8;
     border-radius: 20px;
-    padding: 36px;
+    padding: 30px;
+    font-weight: 600;
 }
 
 .index-page-hero__tag--catalog {

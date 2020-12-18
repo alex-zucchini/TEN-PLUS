@@ -12,55 +12,38 @@ let catalogContain5 = document.querySelector(".hidden-menu__contains5")
 let catalogContain6 = document.querySelector(".hidden-menu__contains6")
 let catalogContent = document.querySelector(".hidden-menu__content")
 
-
-// function popupCatalogMenu() {
-//     let popupStatus = false;
-//     let mouseOverPopup = false;
-  
-//     catalogBtn.onmouseenter = function () {
-//         catalog.style.display = "block";
-//       popupStatus = true;
-//     };
-  
-//     catalogBtn.onmouseleave = function () {
-//       if (popupStatus == true && mouseOverPopup == false) {
-//         catalog.style.display = "none";
-//       } else {
-//         catalog.style.display = "flex";
-//       }
-//     };
-  
-//     catalog.onmouseenter = function () {
-//         catalog.style.display = "block";
-//       mouseOverPopup = true;
-//       popupStatus = true;
-//     };
-  
-//     catalog.onmouseleave = function () {
-//         catalog.style.display = "none";
-//       popupStatus = false;
-//       mouseOverPopup = false;
-//     };
-
-//   }
-  
-//   popupCatalogMenu();
-
-
-
-
-
 const mobileCatalogSubmenuContainer = document.createElement('div')
 mobileCatalogSubmenuContainer.className = "hidden-menu__mobile-content"
 
+const heroTiltElements = document.querySelector(".index-page-hero__wrapper")
+
 catalogBtn.onclick = function () {
     catalog.classList.toggle("shown")
-
-    const heroTiltElements = document.querySelector(".index-page-hero__wrapper")
     if (document.body.contains(heroTiltElements)) {
         // Hide main page hero 3D-elements
         heroTiltElements.classList.toggle("index-page-hero__wrapper--hidden")
     }
+}
+
+// Hide catalog menu after 1 sec
+let headerCatalogMenuTimer
+
+catalog.onmouseleave = function () {
+    headerCatalogMenuTimer = setTimeout(function() {
+        catalog.classList.remove("shown")
+        if (document.body.contains(heroTiltElements)) {
+            // Hide main page hero 3D-elements
+            heroTiltElements.classList.remove("index-page-hero__wrapper--hidden")
+        }
+    }, 1000)
+}
+
+catalog.onmouseenter = function() {
+    clearTimeout(headerCatalogMenuTimer)
+}
+
+catalogBtn.onmouseenter = function() {
+    clearTimeout(headerCatalogMenuTimer)
 }
 
 function refreshCatalogMenuItems() {
@@ -88,7 +71,7 @@ if (window.innerWidth > 759) {
         <li><a href="#">Запчасти для ТЭНов</a></li>
         </ul>`
     })
-    
+
     catalogContain2.addEventListener("mouseover", function () {
         refreshCatalogMenuItems()
         this.classList.add("chosen")
@@ -102,7 +85,7 @@ if (window.innerWidth > 759) {
         <li><a href="#">Ремни</a></li>
         </ul>`
     })
-    
+
     catalogContain3.addEventListener("mouseover", function () {
         refreshCatalogMenuItems()
         this.classList.add("chosen")
@@ -113,7 +96,7 @@ if (window.innerWidth > 759) {
         <li><a href="#">Электроплиты</a></li>
         </ul>`
     })
-    
+
     catalogContain4.addEventListener("mouseover", function () {
         refreshCatalogMenuItems()
         this.classList.add("chosen")
@@ -126,7 +109,7 @@ if (window.innerWidth > 759) {
         <li><a href="#">Предохранительные клапаны</a></li>
         </ul>`
     })
-    
+
     catalogContain5.addEventListener("mouseover", function () {
         refreshCatalogMenuItems()
         this.classList.add("chosen")
@@ -136,7 +119,7 @@ if (window.innerWidth > 759) {
         <li><a href="#">Защита водонагревателя</a></li>
         </ul>`
     })
-    
+
 }
 
 
@@ -176,13 +159,8 @@ if (window.innerWidth < 760) {
         <li><a href="#">Нагревательные элементы для конвекторов</a></li>
         <li><a href="#">Запчасти для ТЭНов</a></li>
         </ul>`
-
-        // if (this.classList.contains("chosen")) {
-        //     refreshCatalogMenuItems()
-        //     refreshMobileCatalogSubmenu()
-        // }
     })
-    
+
     catalogContain2.addEventListener("click", function () {
         refreshCatalogMenuItems()
         refreshMobileCatalogSubmenu()
@@ -215,7 +193,7 @@ if (window.innerWidth < 760) {
         <li><a href="#">Электроплиты</a></li>
         </ul>`
     })
-    
+
     catalogContain4.addEventListener("click", function () {
         refreshCatalogMenuItems()
         refreshMobileCatalogSubmenu()
@@ -232,7 +210,7 @@ if (window.innerWidth < 760) {
         <li><a href="#">Предохранительные клапаны</a></li>
         </ul>`
     })
-    
+
     catalogContain5.addEventListener("click", function () {
         refreshCatalogMenuItems()
         refreshMobileCatalogSubmenu()
@@ -250,5 +228,5 @@ if (window.innerWidth < 760) {
     if (document.body.contains(catalogContain1)) {
         catalogContain1.click();
     }
-    
+
 }
