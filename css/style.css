@@ -102,10 +102,7 @@ button:focus {
 
 /* Header */
 header {
-    transform-style: preserve-3d;
-    -webkit-transform-style: preserve-3d;
-    -webkit-perspective: 1000px;
-    perspective: 1000px;
+    position: relative;
 }
 
 @media screen and (max-width:768px) {
