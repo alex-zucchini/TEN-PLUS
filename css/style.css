@@ -2188,8 +2188,8 @@ footer {
 }
 
 .main__catalog-item-img {
-    width: 125px;
-    height: auto;
+    max-height: 90%;
+    max-width: 90%;
 }
 
 .main__catalog-item-description1 {
@@ -2302,8 +2302,8 @@ footer {
 }
 
 .order-list__img {
-    max-height: 108px;
-    max-width: 140px;
+    max-height: 90%;
+    max-width: 90%;
 }
 
 .order-list__name-id-wrapper {
