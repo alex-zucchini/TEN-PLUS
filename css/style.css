@@ -1726,11 +1726,30 @@ footer {
     display: flex;
 }
 
+@media screen and (max-width:1279px){
+    .product-wrapper {
+        flex-direction: column;
+    }   
+}
+
 .product__description-wrapper {
     width: 50%;
     display: flex;
     flex-direction: column;
     padding: 90px 0;
+}
+
+@media screen and (max-width:1279px){
+    .product__description-wrapper {
+        order:2;
+        width: 100%;
+    }   
+}
+
+@media screen and (max-width:750px){
+    .product__description-wrapper {
+        padding-top: 0;
+    }   
 }
 
 .articul {
@@ -1739,6 +1758,12 @@ footer {
     line-height: 24px;
     letter-spacing: 0.1px;
     color: #8A8597;
+}
+
+@media screen and (max-width:1500px){
+    .articul {
+        font-size: 18px;
+    }
 }
 
 .product__description-wrapper h1 {
@@ -1752,12 +1777,25 @@ footer {
     color: #373F41;
 }
 
+@media screen and (max-width:1500px){
+    .product__description-wrapper h1 {
+        font-size: 30px;
+    }
+}
+
 .product__description-wrapper p {
     font-weight: 600;
     line-height: 220%;
     letter-spacing: 0.1px;
     color: #8A8597;
 }
+
+@media screen and (max-width:1500px){
+    .product__description-wrapper p {
+        font-size: 16px;
+    }    
+}
+
 
 .price-quantity-widget-wrapper {
     display: flex;
@@ -1787,6 +1825,12 @@ footer {
     color: #373F41;
 }
 
+@media screen and (max-width:400px){
+    .product__price span {
+        font-size: 24px;
+    }
+}
+
 .price-quantity-widget-wrapper .quantity-widget {
     margin-left: 60px;
     /* border: 1px solid #E0DEDE;
@@ -1794,11 +1838,17 @@ footer {
     border-radius: 10px; */
 }
 
+@media screen and (max-width:352px){
+    .price-quantity-widget-wrapper .quantity-widget {
+        margin-left: 25px;
+    }
+}
+
 .add-btn {
     background: #EE887F;
     border-radius: 10px;
     height: 56px;
-    width: 31%;
+    width: 263px;
     font-weight: bold;
     font-size: 21px;
     line-height: 24px;
@@ -1824,7 +1874,21 @@ footer {
     background: linear-gradient(132.69deg, #FCF8F8 12.1%, rgba(252, 248, 248, 0) 63.42%);
     border-radius: 363px 0px 0px 0px;
     padding-left: 80px;
+    max-width: 80vw;
 }
+
+@media screen and (max-width:600px){
+    .product-gallery__wrapper {
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width:482px){
+    .product-gallery__wrapper {
+        padding-left: 0;
+    }
+}
+
 
 
 .product-gallery {
@@ -1833,7 +1897,6 @@ footer {
     height: 700px;
     width: 700px;
     max-width: 80vw;
-
 }
 
 .product-gallery__main-img-wrapper {
