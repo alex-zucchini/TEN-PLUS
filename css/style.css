@@ -853,6 +853,89 @@ header {
     display: block;
 }
 
+/* sidebar */
+
+
+.sidebar {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    color: #17142F;
+    font-size: 32px;
+    line-height: 37px;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: none;
+}
+
+.sidebar-opn {
+    display: block;
+}
+
+.sidebar-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.menu-site-nav-list {
+    padding-top: 88px;
+}
+
+.menu-user-nav-list {
+    padding-top: 80px;
+}
+
+.menu-user-nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar a {
+    text-decoration: none;
+}
+
+.sidebar li {
+    list-style: none;
+    margin-bottom: 29px;
+}
+
+.menu-site-nav-link {
+    font-size: 32px;
+    line-height: 37px;
+    color: #17142F;
+}
+
+.menu-user-nav-link {
+    font-weight: bold;
+    font-size: 24px;
+    color: #192538;
+    margin-left: 12px;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 32px;
+    right: 52px;
+    font-size: 56px;
+    color: #000;
+}
+
+.openbtn.openbtnon {
+    display: none;
+}
+
 
 
 /* banner */

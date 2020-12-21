@@ -226,3 +226,20 @@ if (window.innerWidth < 760) {
         catalogContain1.click();
     }
 }
+
+// sidebar open close
+
+let popup = document.querySelector('.sidebar')
+let openBtn = document.querySelector('.header__hamburger-wrapper')
+let closeBtn = popup.querySelector('.closebtn')
+
+openBtn.addEventListener('click', function (){
+  popup.classList.add('sidebar-opn')
+  openBtn.classList.add('openbtnon')
+  
+    });
+    
+  closeBtn.addEventListener('click', function(){
+  popup.classList.remove('sidebar-opn')
+  openBtn.classList.remove('openbtnon')
+    });
