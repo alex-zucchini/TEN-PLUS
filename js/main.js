@@ -231,15 +231,26 @@ if (window.innerWidth < 760) {
 
 let popup = document.querySelector('.sidebar')
 let openBtn = document.querySelector('.header__hamburger-wrapper')
-let closeBtn = popup.querySelector('.closebtn')
+let headerMenuCLoseButton = popup.querySelector('.header__menu-close-button')
 
-openBtn.addEventListener('click', function (){
-  popup.classList.add('sidebar-opn')
-  openBtn.classList.add('openbtnon')
-  
-    });
-    
-  closeBtn.addEventListener('click', function(){
-  popup.classList.remove('sidebar-opn')
-  openBtn.classList.remove('openbtnon')
-    });
+openBtn.addEventListener('click', function () {
+    popup.classList.add('sidebar-opn')
+    openBtn.classList.add('openbtnon')
+    if (document.body.contains(heroTiltElements)) {
+        // Hide main page hero 3D-elements
+        heroTiltElements.classList.add("index-page-hero__wrapper--hidden")
+    }
+});
+
+headerMenuCLoseButton.addEventListener('click', function () {
+    popup.classList.remove('sidebar-opn')
+    openBtn.classList.remove('openbtnon')
+    if (document.body.contains(heroTiltElements)) {
+        // Show main page hero 3D-elements
+        heroTiltElements.classList.remove("index-page-hero__wrapper--hidden")
+    }
+});
+
+
+
+
