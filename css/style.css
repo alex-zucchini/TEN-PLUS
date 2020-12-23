@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', -apple-system, system-ui, BlinkMacSystemFont, “Segoe UI”, Roboto, “Helvetica Neue”, Arial, sans-serif;
     color: #373F41;
     font-size: 18px;
     line-height: 1.22;
@@ -1816,7 +1816,7 @@ footer {
     display: flex;
 }
 
-@media screen and (max-width:1279px){
+@media screen and (max-width:970px){
     .product-wrapper {
         flex-direction: column;
     }   
@@ -1829,10 +1829,18 @@ footer {
     padding: 90px 0;
 }
 
-@media screen and (max-width:1279px){
+@media screen and (max-width:1090px){
+    .product__description-wrapper {
+        padding-right: 40px;
+    }   
+}
+
+@media screen and (max-width:970px){
     .product__description-wrapper {
         order:2;
         width: 100%;
+        padding-top: 30px;
+        padding-right: 0;
     }   
 }
 
@@ -1873,6 +1881,14 @@ footer {
     }
 }
 
+@media screen and (max-width:970px){
+    .product__description-wrapper h1 {
+        font-size: 24px;
+        padding-top: 6px;
+        padding-bottom: 20px;
+    }
+}
+
 .product__description-wrapper p {
     font-weight: 600;
     line-height: 220%;
@@ -1893,21 +1909,32 @@ footer {
     padding-top: 45px;
 }
 
+@media screen and (max-width:970px){
+    .price-quantity-widget-wrapper {
+        display: flex;
+        align-items: center;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+}
+@media screen and (max-width:470px){
+    .price-quantity-widget-wrapper {
+        display: flex;
+        align-items: center;
+        padding-top: 4px;
+        padding-bottom: 0;
+    }
+}
+
 .product__price {
     display: flex;
     align-items: center;
     margin-right: 12px;
 }
 
-.product__price p {
-    font-size: 24px;
-    line-height: 24px;
-    letter-spacing: 0.1px;
-    color: #8A8597;
-    white-space: pre;
-}
 
-.product__price span {
+
+.product__price {
     font-weight: bold;
     font-size: 36px;
     line-height: 24px;
@@ -1916,7 +1943,7 @@ footer {
 }
 
 @media screen and (max-width:400px){
-    .product__price span {
+    .product__price {
         font-size: 24px;
     }
 }
@@ -1957,14 +1984,41 @@ footer {
     background: #ee7165;
 }
 
+@media screen and (max-width:970px){
+    .add-btn {
+        height: 62px;
+        width: 100%;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+}
+
 
 /* Product gallery */
 .product-gallery__wrapper {
-
     background: linear-gradient(132.69deg, #FCF8F8 12.1%, rgba(252, 248, 248, 0) 63.42%);
     border-radius: 363px 0px 0px 0px;
     padding-left: 80px;
     max-width: 80vw;
+}
+
+@media screen and (max-width:1380px){
+    .product-gallery__wrapper {
+        max-width: 50%;
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width:970px){
+    .product-gallery__wrapper {
+        max-width: 100%;
+        padding-left: 0;
+        border-radius: 140px 0px 0px 0px;
+        -webkit-border-radius: 140px 0px 0px 0px;
+        -moz-border-radius: 140px 0px 0px 0px;
+        -ms-border-radius: 140px 0px 0px 0px;
+        -o-border-radius: 140px 0px 0px 0px;
+}
 }
 
 @media screen and (max-width:600px){
@@ -1989,12 +2043,41 @@ footer {
     max-width: 80vw;
 }
 
+@media screen and (max-width:1380px){
+    .product-gallery {
+        width: auto;
+        max-width: none;
+    }
+}
+
+@media screen and (max-width:970px){
+    .product-gallery {
+        height: 500px;
+        padding: 30px 0;
+    }
+}
+
+@media screen and (max-width:570px){
+    .product-gallery {
+        height: 300px;
+        padding: 30px 0;
+        width: auto;
+        max-width: none;
+    }
+}
+
 .product-gallery__main-img-wrapper {
     width: 680px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+}
+
+@media screen and (max-width:970px){
+    .product-gallery__main-img-wrapper {
+        height: 100%;
+    }
 }
 
 .product-gallery__main-img {
@@ -2016,6 +2099,13 @@ footer {
     -moz-transform: scale(1.2);
     -ms-transform: scale(1.2);
     -o-transform: scale(1.2);
+}
+
+@media screen and (max-width:970px){
+    .product-gallery__main-img {
+        max-height: 90%;
+        max-width: 90%;
+    }
 }
 
 
@@ -2041,6 +2131,13 @@ footer {
     -o-border-radius: 6px;
     cursor: pointer;
     border: 1px solid #FBF2F2;
+}
+
+@media screen and (max-width:970px){
+    .product-gallery__controls-img-wrapper {
+        height: 60px;
+        width: 60px;
+    }
 }
 
 .product-gallery__controls-img {
