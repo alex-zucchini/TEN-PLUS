@@ -254,3 +254,29 @@ headerMenuCLoseButton.addEventListener('click', function () {
 
 
 
+// Изменяем положение поиска в зависимости от ширины экрана
+let catalogSearch = document.querySelector('.header__search');
+
+function change_search_position() {
+    if (window.innerWidth>=768) {
+		document.querySelector('.search-wrap--desktop').prepend(
+			catalogSearch
+		);
+	};
+    if (window.innerWidth<768) {
+		document.querySelector('.search-wrap--mobile').prepend(
+			catalogSearch
+		);
+	};
+
+};
+
+change_search_position();
+let initialWindowHeight = window.innerHeight;
+
+window.onresize = function() {
+	let newWindowHeight = window.innerHeight;
+	if (initialWindowHeight == newWindowHeight) {
+		change_search_position();
+	}
+};
