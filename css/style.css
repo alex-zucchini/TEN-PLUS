@@ -2248,9 +2248,14 @@ footer {
 @media screen and (max-width:970px) {
     .add-btn {
         height: 62px;
-        width: 100%;
         font-size: 18px;
         margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:440px) {
+    .add-btn {
+        width: 100%;
     }
 }
 
