@@ -918,6 +918,10 @@ header {
     color: #000000;
 }
 
+.hidden-menu__small-pic-wrapper + .hidden-menu__small-pic-wrapper {
+    margin-top: 34px;
+}
+
 .water-heaters1 {
     display: flex;
     align-items: center;
@@ -964,6 +968,8 @@ header {
     color: #000000;
     background: #FCF8F8;
     border-radius: 20px;
+    margin-left: 10px;
+    height: 404px;
 }
 
 @media screen and (max-width:1670px) {
@@ -2515,7 +2521,7 @@ footer {
 
 .catalog__filters-apply-button {
     position: fixed;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     bottom: 0;
@@ -2527,6 +2533,14 @@ footer {
     font-weight: 600;
     z-index: 2000;
 }
+
+@media screen and (max-width:1126px) {
+    .catalog__filters-apply-button {
+        display: flex;
+    }
+}
+
+
 
 
 /* Catalog filters */
