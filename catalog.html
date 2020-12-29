@@ -11,10 +11,207 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <title>ТЭН ПЛЮС</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
+
+    <header>
+        <div class="container">
+            <nav class='header'>
+                <div class="header__row-top">
+                    <ul class='header__menu'>
+                        <li class='header__menu-item'><a class='header__menu-link' href='#'>Акции</a></li>
+                        <li class='header__menu-item'><a class='header__menu-link' href='#'>Гарантия</a></li>
+                        <li class='header__menu-item'><a class='header__menu-link' href='#'>Доставка</a></li>
+                        <li class='header__menu-item'><a class='header__menu-link' href='#'>Оплата</a></li>
+                        <li class='header__menu-item'><a class='header__menu-link' href='/about.html'>О компании</a>
+                        </li>
+                        <li class='header__menu-item'><a class='header__menu-link' href='/contacts.html'>Контакты</a>
+                        </li>
+                    </ul>
+
+                    <div class='header__email-auth-wrapper'>
+                        <a class='header__email-link' href='mailto:info@tenplus.ru'>
+                            <img class='header__email-icon' src='img/header-mail.svg' alt='E-mail'>
+                            <p class="header__email-address">info@tenplus.ru</p>
+                        </a>
+                        <a href="/login.html" class="header__authorization">Войти</a>
+                    </div>
+
+                </div>
+
+                <div class="header__row-bottom">
+                    <div class="header__logo-slogan-catalog-wrapper">
+                        <div class="header__logo-slogan-wrapper">
+                            <a class="header__logo-link" href='/index.html'>
+                                <img src="img/header-logo-main.svg" alt="ТЭН ПЛЮС" class="header__logo-img">
+                            </a>
+                            <p class="header__slogan">Тэны оптом с доставкой по России и странам СНГ</p>
+                        </div>
+
+                        <button type='button' class="header__catalog">
+                            <img src="img/header-catalog.svg" alt="Каталог" class="header__catalog-icon">
+                            Каталог
+                        </button>
+                    </div>
+                    <div class="search-wrap--desktop">
+
+                    </div>
+                    <div class="header__phone-cart-wrapper">
+                        <a class="header__phone-link" href="tel:+78002340997">
+                            <img src='img/header-phone.svg' alt="Телефон" class="header__phone-icon">
+                            <p class='header__phone-number'>8 (800) 234-09-97</p>
+                        </a>
+                        <a class="header__cart-link" href='/shopping_cart.html'>
+                            <img src="img/header-cart.svg" alt="" class="header__cart-icon">
+                            <div class="header__order">
+                                <div class="header__order-quantity">2</div>
+                            </div>
+                        </a>
+                        <a href='#' class='header__hamburger-wrapper'>
+                            <p>Меню</p>
+                            <div class="hamburger">
+                                <span class="header__openbtn-lines"></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+
+        <div class="hidden-menu">
+            <div class="container">
+                <div class="search-wrap--mobile">
+                    <div class="header__search">
+                        <img src='img/header-search.svg' alt="Поиск" class="header__search-icon">
+                        Поиск по каталогу
+                    </div>
+                </div>
+                <div class="hidden-menu__wrapper">
+
+                    <div class="hidden-menu__block hidden-menu__contains">
+                        <ul>
+                            <li class="hidden-menu__contains__item hidden-menu__contains1 chosen">
+                                <a href="#">ТЭНы </a>
+                                <svg class="hidden-menu__contains__item-arrow" viewBox="0 0 6 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="hidden-menu__contains__item-arrow-icon"
+                                        d="M0.851445 10.9986C0.652853 10.9989 0.460393 10.9351 0.307477 10.8183C0.221413 10.7525 0.150271 10.6716 0.0981246 10.5804C0.0459785 10.4892 0.0138536 10.3894 0.0035897 10.2867C-0.00667418 10.184 0.00512484 10.0805 0.0383107 9.98202C0.0714965 9.88355 0.125416 9.79208 0.196984 9.71286L4.00476 5.51075L0.332976 1.3008C0.262375 1.22061 0.209651 1.12834 0.177836 1.02929C0.146021 0.930246 0.135741 0.826376 0.147589 0.723653C0.159437 0.62093 0.193177 0.521379 0.246871 0.430723C0.300566 0.340066 0.373156 0.260092 0.460468 0.195396C0.548409 0.124026 0.651394 0.070192 0.76296 0.0372736C0.874526 0.00435519 0.992266 -0.00693696 1.10879 0.00410525C1.22531 0.0151475 1.3381 0.0482859 1.44008 0.101441C1.54206 0.154596 1.63102 0.22662 1.70139 0.312992L5.80665 5.01685C5.93166 5.15713 6 5.33308 6 5.51467C6 5.69626 5.93166 5.87222 5.80665 6.0125L1.5569 10.7163C1.47164 10.8112 1.36333 10.8862 1.24075 10.9353C1.11818 10.9843 0.984807 11.006 0.851445 10.9986Z" />
+                                </svg>
+
+                            </li>
+                            <li class="hidden-menu__contains__item hidden-menu__contains2">
+                                <a href="#">Запчасти для стиральных машин </a>
+                                <svg class="hidden-menu__contains__item-arrow" viewBox="0 0 6 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="hidden-menu__contains__item-arrow-icon"
+                                        d="M0.851445 10.9986C0.652853 10.9989 0.460393 10.9351 0.307477 10.8183C0.221413 10.7525 0.150271 10.6716 0.0981246 10.5804C0.0459785 10.4892 0.0138536 10.3894 0.0035897 10.2867C-0.00667418 10.184 0.00512484 10.0805 0.0383107 9.98202C0.0714965 9.88355 0.125416 9.79208 0.196984 9.71286L4.00476 5.51075L0.332976 1.3008C0.262375 1.22061 0.209651 1.12834 0.177836 1.02929C0.146021 0.930246 0.135741 0.826376 0.147589 0.723653C0.159437 0.62093 0.193177 0.521379 0.246871 0.430723C0.300566 0.340066 0.373156 0.260092 0.460468 0.195396C0.548409 0.124026 0.651394 0.070192 0.76296 0.0372736C0.874526 0.00435519 0.992266 -0.00693696 1.10879 0.00410525C1.22531 0.0151475 1.3381 0.0482859 1.44008 0.101441C1.54206 0.154596 1.63102 0.22662 1.70139 0.312992L5.80665 5.01685C5.93166 5.15713 6 5.33308 6 5.51467C6 5.69626 5.93166 5.87222 5.80665 6.0125L1.5569 10.7163C1.47164 10.8112 1.36333 10.8862 1.24075 10.9353C1.11818 10.9843 0.984807 11.006 0.851445 10.9986Z" />
+                                </svg>
+                            </li>
+                            <li class="hidden-menu__contains__item hidden-menu__contains3">
+                                <a href="#">Конфорки и плиты </a>
+                                <svg class="hidden-menu__contains__item-arrow" viewBox="0 0 6 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="hidden-menu__contains__item-arrow-icon"
+                                        d="M0.851445 10.9986C0.652853 10.9989 0.460393 10.9351 0.307477 10.8183C0.221413 10.7525 0.150271 10.6716 0.0981246 10.5804C0.0459785 10.4892 0.0138536 10.3894 0.0035897 10.2867C-0.00667418 10.184 0.00512484 10.0805 0.0383107 9.98202C0.0714965 9.88355 0.125416 9.79208 0.196984 9.71286L4.00476 5.51075L0.332976 1.3008C0.262375 1.22061 0.209651 1.12834 0.177836 1.02929C0.146021 0.930246 0.135741 0.826376 0.147589 0.723653C0.159437 0.62093 0.193177 0.521379 0.246871 0.430723C0.300566 0.340066 0.373156 0.260092 0.460468 0.195396C0.548409 0.124026 0.651394 0.070192 0.76296 0.0372736C0.874526 0.00435519 0.992266 -0.00693696 1.10879 0.00410525C1.22531 0.0151475 1.3381 0.0482859 1.44008 0.101441C1.54206 0.154596 1.63102 0.22662 1.70139 0.312992L5.80665 5.01685C5.93166 5.15713 6 5.33308 6 5.51467C6 5.69626 5.93166 5.87222 5.80665 6.0125L1.5569 10.7163C1.47164 10.8112 1.36333 10.8862 1.24075 10.9353C1.11818 10.9843 0.984807 11.006 0.851445 10.9986Z" />
+                                </svg>
+                            </li>
+                            <li class="hidden-menu__contains__item hidden-menu__contains4">
+                                <a href="#">Запчасти для бытовой техники </a>
+                                <svg class="hidden-menu__contains__item-arrow" viewBox="0 0 6 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="hidden-menu__contains__item-arrow-icon"
+                                        d="M0.851445 10.9986C0.652853 10.9989 0.460393 10.9351 0.307477 10.8183C0.221413 10.7525 0.150271 10.6716 0.0981246 10.5804C0.0459785 10.4892 0.0138536 10.3894 0.0035897 10.2867C-0.00667418 10.184 0.00512484 10.0805 0.0383107 9.98202C0.0714965 9.88355 0.125416 9.79208 0.196984 9.71286L4.00476 5.51075L0.332976 1.3008C0.262375 1.22061 0.209651 1.12834 0.177836 1.02929C0.146021 0.930246 0.135741 0.826376 0.147589 0.723653C0.159437 0.62093 0.193177 0.521379 0.246871 0.430723C0.300566 0.340066 0.373156 0.260092 0.460468 0.195396C0.548409 0.124026 0.651394 0.070192 0.76296 0.0372736C0.874526 0.00435519 0.992266 -0.00693696 1.10879 0.00410525C1.22531 0.0151475 1.3381 0.0482859 1.44008 0.101441C1.54206 0.154596 1.63102 0.22662 1.70139 0.312992L5.80665 5.01685C5.93166 5.15713 6 5.33308 6 5.51467C6 5.69626 5.93166 5.87222 5.80665 6.0125L1.5569 10.7163C1.47164 10.8112 1.36333 10.8862 1.24075 10.9353C1.11818 10.9843 0.984807 11.006 0.851445 10.9986Z" />
+                                </svg>
+                            </li>
+                            <li class="hidden-menu__contains__item hidden-menu__contains5">
+                                <a href="#">Разное </a>
+                                <svg class="hidden-menu__contains__item-arrow" viewBox="0 0 6 11" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="hidden-menu__contains__item-arrow-icon"
+                                        d="M0.851445 10.9986C0.652853 10.9989 0.460393 10.9351 0.307477 10.8183C0.221413 10.7525 0.150271 10.6716 0.0981246 10.5804C0.0459785 10.4892 0.0138536 10.3894 0.0035897 10.2867C-0.00667418 10.184 0.00512484 10.0805 0.0383107 9.98202C0.0714965 9.88355 0.125416 9.79208 0.196984 9.71286L4.00476 5.51075L0.332976 1.3008C0.262375 1.22061 0.209651 1.12834 0.177836 1.02929C0.146021 0.930246 0.135741 0.826376 0.147589 0.723653C0.159437 0.62093 0.193177 0.521379 0.246871 0.430723C0.300566 0.340066 0.373156 0.260092 0.460468 0.195396C0.548409 0.124026 0.651394 0.070192 0.76296 0.0372736C0.874526 0.00435519 0.992266 -0.00693696 1.10879 0.00410525C1.22531 0.0151475 1.3381 0.0482859 1.44008 0.101441C1.54206 0.154596 1.63102 0.22662 1.70139 0.312992L5.80665 5.01685C5.93166 5.15713 6 5.33308 6 5.51467C6 5.69626 5.93166 5.87222 5.80665 6.0125L1.5569 10.7163C1.47164 10.8112 1.36333 10.8862 1.24075 10.9353C1.11818 10.9843 0.984807 11.006 0.851445 10.9986Z" />
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hidden-menu__block hidden-menu__content">
+                        <ul>
+                            <li><a href="#">ТЭНы для водонагревателей</a></li>
+                            <li><a href="#">ТЭНы для стиральных машин</a></li>
+                            <li><a href="#">Воздушные ТЭНы</a></li>
+                            <li><a href="#">Водяные ТЭНы</a></li>
+                            <li><a href="#">ТЭНы для промышленных и бытовых плит</a></li>
+                            <li><a href="#">ТЭНы бытовые</a></li>
+                            <li><a href="#">ТЭНы для дистилляторов и кулеров</a></li>
+                            <li><a href="#">ТЭНы для сауны</a></li>
+                            <li><a href="#">Блоки ТЭН</a></li>
+                            <li><a href="#">Нагревательные элементы для конвекторов</a></li>
+                            <li><a href="#">Запчасти для ТЭНов</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="hidden-menu__block hidden-menu__small-pics">
+                        <a href="#" class="hidden-menu__small-pic-wrapper">
+                            <div class="water-heaters1">
+                                <p>Водонагреватели</p>
+                                <img src="img/tank.png" alt="Водонагреватели" class="tank-small">
+                            </div>
+                        </a>
+                        <a href="#" class="hidden-menu__small-pic-wrapper">
+                            <div class="water-heaters2">
+                                <p>Водонагреватели</p>
+                                <img src="img/tank.png" alt="Водонагреватели" class="tank-small">
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="hidden-menu__block hidden-menu__big-pic">
+                        <a href="#" class="hidden-menu__big-pic-wrapper">
+                            <img src="img/tank-big.png" alt="Водонагреватели" class="tank-big">
+                            <p>Водонагреватели</p>
+                        </a>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <a href="javascript:void(0)" class="header__menu-close-button">×</a>
+            <div class="sidebar-wrapper">
+                <div class="sidebar-content">
+                    <ul class='menu-site-nav-list'>
+                        <li class='menu-site-nav-item'><a class='menu-site-nav-link' href='#'>Акции</a></li>
+                        <li class='menu-site-nav-item'><a class='menu-site-nav-link' href='#'>Гарантия</a></li>
+                        <li class='menu-site-nav-item'><a class='menu-site-nav-link' href='#'>Доставка</a></li>
+                        <li class='menu-site-nav-item'><a class='menu-site-nav-link' href='#'>Оплата</a></li>
+                        <li class='menu-site-nav-item'><a class='menu-site-nav-link' href='/about.html'>О компании</a>
+                        </li>
+                        <li class='menu-site-nav-item'><a class='menu-site-nav-link' href='/contacts.html'>Контакты</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+
+    </header>
 
     <main>
         <div class="container">
@@ -41,11 +238,11 @@
 
                 <div class="catalog__filters">
                     <button class="catalog__filters-close-button">×</button>
-                    <!-- Wrapper for mobile relative position (scroll in absolute block) -->
+
                     <div class="catalog__filters-wrapper">
 
                         <h2 class="catalog__filters-heading">Фильтры</h2>
-                        
+
                         <div class="catalog__filter-items-wrapper">
                             <div class="catalog__filter catalog__filter--brand">
                                 <h3>Бренды</h3>
@@ -142,7 +339,7 @@
 
                         <button class="catalog__filters-apply-button">Применить фильтры</button>
                     </div>
-                    
+
                 </div>
 
                 <div class="catalog__products">
@@ -151,7 +348,8 @@
                         <a href="/product.html" class="catalog__product-img-wrapper">
                             <img class="catalog__product-img" src="img/catalog/ariston-velis.png" alt="Ariston"></a>
                         <a href="/product.html" class="catalog__product-code">С040</a>
-                        <a href="/product.html" class="catalog__product-description">Нагрев. элемент 1000 Вт. M6 для водонгр.
+                        <a href="/product.html" class="catalog__product-description">Нагрев. элемент 1000 Вт. M6 для
+                            водонгр.
                             Ariston VELIS (65151226)</a>
                         <p class="catalog__product-price">от <span>1000 ₽</span></p>
                         <button class="catalog__product-cta-button" type="button">Купить</button>
@@ -160,7 +358,8 @@
                         <a href="/product.html" class="catalog__product-img-wrapper">
                             <img class="catalog__product-img" src="img/catalog/ariston-velis.png" alt="Ariston"></a>
                         <a href="/product.html" class="catalog__product-code">С040</a>
-                        <a href="/product.html" class="catalog__product-description">Нагрев. элемент 1000 Вт. M6 для водонгр.
+                        <a href="/product.html" class="catalog__product-description">Нагрев. элемент 1000 Вт. M6 для
+                            водонгр.
                             Ariston VELIS (65151226)</a>
                         <p class="catalog__product-price">от <span>1000 ₽</span></p>
                         <button class="catalog__product-cta-button" type="button">Купить</button>
@@ -169,7 +368,8 @@
                         <a href="/product.html" class="catalog__product-img-wrapper">
                             <img class="catalog__product-img" src="img/catalog/ariston-velis.png" alt="Ariston"></a>
                         <a href="/product.html" class="catalog__product-code">С040</a>
-                        <a href="/product.html" class="catalog__product-description">Нагрев. элемент 1000 Вт. M6 для водонгр.
+                        <a href="/product.html" class="catalog__product-description">Нагрев. элемент 1000 Вт. M6 для
+                            водонгр.
                             Ariston VELIS (65151226)</a>
                         <p class="catalog__product-price">от <span>1000 ₽</span></p>
                         <button class="catalog__product-cta-button" type="button">Купить</button>
@@ -178,7 +378,8 @@
                         <a href="/product.html" class="catalog__product-img-wrapper">
                             <img class="catalog__product-img" src="img/catalog/ariston-velis.png" alt="Ariston"></a>
                         <a href="/product.html" class="catalog__product-code">С040</a>
-                        <a href="/product.html" class="catalog__product-description">Нагрев. элемент 1000 Вт. M6 для водонгр.
+                        <a href="/product.html" class="catalog__product-description">Нагрев. элемент 1000 Вт. M6 для
+                            водонгр.
                             Ariston VELIS (65151226)</a>
                         <p class="catalog__product-price">от <span>1000 ₽</span></p>
                         <button class="catalog__product-cta-button" type="button">Купить</button>
@@ -187,7 +388,8 @@
                         <a href="/product.html" class="catalog__product-img-wrapper">
                             <img class="catalog__product-img" src="img/catalog/ariston-velis.png" alt="Ariston"></a>
                         <a href="/product.html" class="catalog__product-code">С040</a>
-                        <a href="/product.html" class="catalog__product-description">Нагрев. элемент 1000 Вт. M6 для водонгр.
+                        <a href="/product.html" class="catalog__product-description">Нагрев. элемент 1000 Вт. M6 для
+                            водонгр.
                             Ariston VELIS (65151226)</a>
                         <p class="catalog__product-price">от <span>1000 ₽</span></p>
                         <button class="catalog__product-cta-button" type="button">Купить</button>
@@ -196,7 +398,8 @@
                         <a href="/product.html" class="catalog__product-img-wrapper">
                             <img class="catalog__product-img" src="img/catalog/ariston-velis.png" alt="Ariston"></a>
                         <a href="/product.html" class="catalog__product-code">С040</a>
-                        <a href="/product.html" class="catalog__product-description">Нагрев. элемент 1000 Вт. M6 для водонгр.
+                        <a href="/product.html" class="catalog__product-description">Нагрев. элемент 1000 Вт. M6 для
+                            водонгр.
                             Ariston VELIS (65151226)</a>
                         <p class="catalog__product-price">от <span>1000 ₽</span></p>
                         <button class="catalog__product-cta-button" type="button">Купить</button>
@@ -205,7 +408,8 @@
                         <a href="/product.html" class="catalog__product-img-wrapper">
                             <img class="catalog__product-img" src="img/catalog/ariston-velis.png" alt="Ariston"></a>
                         <a href="/product.html" class="catalog__product-code">С040</a>
-                        <a href="/product.html" class="catalog__product-description">Нагрев. элемент 1000 Вт. M6 для водонгр.
+                        <a href="/product.html" class="catalog__product-description">Нагрев. элемент 1000 Вт. M6 для
+                            водонгр.
                             Ariston VELIS (65151226)</a>
                         <p class="catalog__product-price">от <span>1000 ₽</span></p>
                         <button class="catalog__product-cta-button" type="button">Купить</button>
@@ -214,7 +418,8 @@
                         <a href="/product.html" class="catalog__product-img-wrapper">
                             <img class="catalog__product-img" src="img/catalog/ariston-velis.png" alt="Ariston"></a>
                         <a href="/product.html" class="catalog__product-code">С040</a>
-                        <a href="/product.html" class="catalog__product-description">Нагрев. элемент 1000 Вт. M6 для водонгр.
+                        <a href="/product.html" class="catalog__product-description">Нагрев. элемент 1000 Вт. M6 для
+                            водонгр.
                             Ariston VELIS (65151226)</a>
                         <p class="catalog__product-price">от <span>1000 ₽</span></p>
                         <button class="catalog__product-cta-button" type="button">Купить</button>
@@ -223,7 +428,8 @@
                         <a href="/product.html" class="catalog__product-img-wrapper">
                             <img class="catalog__product-img" src="img/catalog/ariston-velis.png" alt="Ariston"></a>
                         <a href="/product.html" class="catalog__product-code">С040</a>
-                        <a href="/product.html" class="catalog__product-description">Нагрев. элемент 1000 Вт. M6 для водонгр.
+                        <a href="/product.html" class="catalog__product-description">Нагрев. элемент 1000 Вт. M6 для
+                            водонгр.
                             Ariston VELIS (65151226)</a>
                         <p class="catalog__product-price">от <span>1000 ₽</span></p>
                         <button class="catalog__product-cta-button" type="button">Купить</button>
@@ -232,7 +438,8 @@
                         <a href="/product.html" class="catalog__product-img-wrapper">
                             <img class="catalog__product-img" src="img/catalog/ariston-velis.png" alt="Ariston"></a>
                         <a href="/product.html" class="catalog__product-code">С040</a>
-                        <a href="/product.html" class="catalog__product-description">Нагрев. элемент 1000 Вт. M6 для водонгр.
+                        <a href="/product.html" class="catalog__product-description">Нагрев. элемент 1000 Вт. M6 для
+                            водонгр.
                             Ariston VELIS (65151226)</a>
                         <p class="catalog__product-price">от <span>1000 ₽</span></p>
                         <button class="catalog__product-cta-button" type="button">Купить</button>
@@ -241,7 +448,8 @@
                         <a href="/product.html" class="catalog__product-img-wrapper">
                             <img class="catalog__product-img" src="img/catalog/ariston-velis.png" alt="Ariston"></a>
                         <a href="/product.html" class="catalog__product-code">С040</a>
-                        <a href="/product.html" class="catalog__product-description">Нагрев. элемент 1000 Вт. M6 для водонгр.
+                        <a href="/product.html" class="catalog__product-description">Нагрев. элемент 1000 Вт. M6 для
+                            водонгр.
                             Ariston VELIS (65151226)</a>
                         <p class="catalog__product-price">от <span>1000 ₽</span></p>
                         <button class="catalog__product-cta-button" type="button">Купить</button>
@@ -250,7 +458,8 @@
                         <a href="/product.html" class="catalog__product-img-wrapper">
                             <img class="catalog__product-img" src="img/catalog/ariston-velis.png" alt="Ariston"></a>
                         <a href="/product.html" class="catalog__product-code">С040</a>
-                        <a href="/product.html" class="catalog__product-description">Нагрев. элемент 1000 Вт. M6 для водонгр.
+                        <a href="/product.html" class="catalog__product-description">Нагрев. элемент 1000 Вт. M6 для
+                            водонгр.
                             Ariston VELIS (65151226)</a>
                         <p class="catalog__product-price">от <span>1000 ₽</span></p>
                         <button class="catalog__product-cta-button" type="button">Купить</button>
@@ -259,7 +468,8 @@
                         <a href="/product.html" class="catalog__product-img-wrapper">
                             <img class="catalog__product-img" src="img/catalog/ariston-velis.png" alt="Ariston"></a>
                         <a href="/product.html" class="catalog__product-code">С040</a>
-                        <a href="/product.html" class="catalog__product-description">Нагрев. элемент 1000 Вт. M6 для водонгр.
+                        <a href="/product.html" class="catalog__product-description">Нагрев. элемент 1000 Вт. M6 для
+                            водонгр.
                             Ariston VELIS (65151226)</a>
                         <p class="catalog__product-price">от <span>1000 ₽</span></p>
                         <button class="catalog__product-cta-button" type="button">Купить</button>
@@ -268,7 +478,8 @@
                         <a href="/product.html" class="catalog__product-img-wrapper">
                             <img class="catalog__product-img" src="img/catalog/ariston-velis.png" alt="Ariston"></a>
                         <a href="/product.html" class="catalog__product-code">С040</a>
-                        <a href="/product.html" class="catalog__product-description">Нагрев. элемент 1000 Вт. M6 для водонгр.
+                        <a href="/product.html" class="catalog__product-description">Нагрев. элемент 1000 Вт. M6 для
+                            водонгр.
                             Ariston VELIS (65151226)</a>
                         <p class="catalog__product-price">от <span>1000 ₽</span></p>
                         <button class="catalog__product-cta-button" type="button">Купить</button>
@@ -277,18 +488,58 @@
                         <a href="/product.html" class="catalog__product-img-wrapper">
                             <img class="catalog__product-img" src="img/catalog/ariston-velis.png" alt="Ariston"></a>
                         <a href="/product.html" class="catalog__product-code">С040</a>
-                        <a href="/product.html" class="catalog__product-description">Нагрев. элемент 1000 Вт. M6 для водонгр.
+                        <a href="/product.html" class="catalog__product-description">Нагрев. элемент 1000 Вт. M6 для
+                            водонгр.
                             Ariston VELIS (65151226)</a>
                         <p class="catalog__product-price">от <span>1000 ₽</span></p>
                         <button class="catalog__product-cta-button" type="button">Купить</button>
                     </div>
-                    
+
 
                 </div>
             </div>
         </div>
     </main>
-
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="footer-top-wrapper">
+                    <div class="footer-top-wrapper1">
+                        <div class="footer-top-block1">
+                            <a href="#" class="footer-top-item footer-top-item-bold">Акции</a>
+                            <a href="/about.html" class="footer-top-item footer-top-item-bold">О компании</a>
+                            <a href="#" class="footer-top-item footer-top-item-bold">Доставка и оплата</a>
+                            <a href="/contacts.html" class="footer-top-item footer-top-item-bold">Контакты</a>
+                        </div>
+                        <div class="footer-top-block2">
+                            <a href="#" class="footer-top-item footer-top-item-bold">Каталог</a>
+                            <a href="#" class="footer-top-item">Тэны</a>
+                            <a href="#" class="footer-top-item">Запчасти для тэнов</a>
+                            <a href="#" class="footer-top-item">Запчасти для стиральных машин</a>
+                            <a href="#" class="footer-top-item">Плиты и конфорки</a>
+                        </div>
+                    </div>
+                    <div class="footer-top-wrapper2">
+                        <div class="footer-top-block3">
+                            <a href="#" class="footer-top-item footer-top-item-bold">Свяжитесь с нами</a>
+                            <a class="footer-top-item" href="tel:+78002340997">8 (800) 234-09-97</a>
+                            <a class="footer-top-item" href="mailto:info@tenplus.ru">info@tenplus.ru</a>
+                        </div>
+                        <div class="footer-top-block4">
+                            <a href="#" class="footer-top-item footer-top-item-bold">Сервис</a>
+                            <a href="#" class="footer-top-item">Гарантия</a>
+                            <a href="#" class="footer-top-item">Возврат</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="fotter-bottom-item copyright">© ООО “Тэн Плюс” — 2020</p>
+                <a href="#" class="fotter-bottom-item confidentiality">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
     <script src="js/range-slider.js"></script>
     <script src="js/catalog.js"></script>
 
