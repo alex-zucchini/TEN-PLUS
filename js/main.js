@@ -272,3 +272,20 @@ window.onresize = function() {
 		change_search_position();
 	}
 };
+
+// up button
+
+let upButton = document.querySelector('.up-button');
+
+window.onscroll = function () {
+  if (window.pageYOffset > 2000) {
+    upButton.classList.add('show-up-button');
+  } else {
+    upButton.classList.remove('show-up-button');
+  }
+
+};
+
+upButton.onclick = function () {
+  window.scrollTo(0, 0);
+};

@@ -13,6 +13,7 @@
 html {
     max-width: 100vw;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -21,11 +22,14 @@ body {
     font-size: 18px;
     line-height: 1.22;
     /* letter-spacing: ?; */
-    transform-style: preserve-3d;
+
+    /* 3D */
+
+    /* transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     -moz-transform-style: preserve-3d;
     -webkit-perspective: 2400px;
-    perspective: 2400px;
+    perspective: 2400px; */
     max-width: 100vw;
     overflow-x: hidden;
     position: relative;
@@ -984,9 +988,7 @@ header {
     margin-bottom: 36px;
 }
 
-.shown {
-    display: block;
-}
+
 
 /* sidebar */
 
@@ -1089,6 +1091,18 @@ header {
     display: none;
 }
 
+.up-button {
+    position: fixed;
+    right: 10px;
+    bottom: 150px;
+    display: none;
+    width: 100px;
+    height: 50px;
+}
+
+.show-up-button {
+    display: block;
+}
 
 
 /* banner */
@@ -2418,7 +2432,9 @@ footer {
 }
 
 
-
+.you-may-also-like {
+    padding-bottom: 100px;
+}
 
 
 
